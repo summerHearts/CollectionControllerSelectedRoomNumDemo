@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceHanSansCN-Regular.otf">
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelRoomTypeFillterViewIdentifier" id="U6b-Vx-4bR" customClass="HotelRoomTypeFillterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinyetejia" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-MS-UmM">
+                    <rect key="frame" x="8" y="10" width="50" height="13"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特价单人房" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-uH-fcF">
+                    <rect key="frame" x="58" y="8" width="70" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gengduo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kvw-C2-fgJ">
+                    <rect key="frame" x="131" y="9" width="15" height="15"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今夜特价优惠，22：00开抢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-Bb-Je3">
+                    <rect key="frame" x="8" y="30" width="147" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="约50平米/床1.5米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-bN-fCr">
+                    <rect key="frame" x="8" y="49" width="102" height="16"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="13"/>
+                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94e-cx-5F3">
+                    <rect key="frame" x="8" y="70" width="14" height="19"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="pcB-tO-hu0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.60419279910000001" blue="0.10371650709999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="138" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-qY-UZz">
+                    <rect key="frame" x="22" y="68" width="31" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="18"/>
+                    <color key="textColor" red="1" green="0.60419279910000001" blue="0.10371650709999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门市价￥254" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMx-n3-mtr">
+                    <rect key="frame" x="55" y="73" width="74" height="16"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="13"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ona-iP-1VR">
+                    <rect key="frame" x="232" y="36" width="80" height="35"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.60419279910000001" blue="0.10371650709999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Omm-Wf-lb5"/>
+                        <constraint firstAttribute="width" constant="80" id="jss-V8-rdc"/>
+                    </constraints>
+                    <state key="normal" title="立即预定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅剩4间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTq-81-DLa">
+                    <rect key="frame" x="190" y="43" width="40" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="uoJ-4q-q1M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="11"/>
+                    <color key="textColor" red="1" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstItem="ona-iP-1VR" firstAttribute="leading" secondItem="XTq-81-DLa" secondAttribute="trailing" constant="2" id="16k-Lx-kLt"/>
+                <constraint firstItem="gWg-MS-UmM" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="6yb-BJ-IF5"/>
+                <constraint firstItem="94e-cx-5F3" firstAttribute="baseline" secondItem="QGg-qY-UZz" secondAttribute="baseline" id="8cl-rz-Nch"/>
+                <constraint firstItem="fdb-Bb-Je3" firstAttribute="top" secondItem="9rw-uH-fcF" secondAttribute="bottom" constant="5" id="Cx0-0f-HXO"/>
+                <constraint firstItem="SMx-n3-mtr" firstAttribute="bottom" secondItem="QGg-qY-UZz" secondAttribute="bottom" id="ILy-9o-Ywq"/>
+                <constraint firstItem="QGg-qY-UZz" firstAttribute="leading" secondItem="94e-cx-5F3" secondAttribute="trailing" id="MZP-q4-H9D"/>
+                <constraint firstItem="94e-cx-5F3" firstAttribute="top" secondItem="mvU-bN-fCr" secondAttribute="bottom" constant="5" id="Pb8-OP-41W"/>
+                <constraint firstItem="fdb-Bb-Je3" firstAttribute="leading" secondItem="gWg-MS-UmM" secondAttribute="leading" id="Pcw-x2-0N7"/>
+                <constraint firstItem="ona-iP-1VR" firstAttribute="trailing" secondItem="U6b-Vx-4bR" secondAttribute="trailingMargin" id="Qxo-S6-QFa"/>
+                <constraint firstItem="9rw-uH-fcF" firstAttribute="leading" secondItem="gWg-MS-UmM" secondAttribute="trailing" id="Tun-0n-4c8"/>
+                <constraint firstItem="ona-iP-1VR" firstAttribute="centerY" secondItem="XTq-81-DLa" secondAttribute="centerY" id="XwS-ld-5ZP"/>
+                <constraint firstItem="SMx-n3-mtr" firstAttribute="leading" secondItem="QGg-qY-UZz" secondAttribute="trailing" constant="2" id="brn-KL-ceh"/>
+                <constraint firstItem="mvU-bN-fCr" firstAttribute="leading" secondItem="gWg-MS-UmM" secondAttribute="leading" id="cO2-az-X2V"/>
+                <constraint firstItem="mvU-bN-fCr" firstAttribute="leading" secondItem="94e-cx-5F3" secondAttribute="leading" id="f6V-MY-aX3"/>
+                <constraint firstItem="9rw-uH-fcF" firstAttribute="centerY" secondItem="gWg-MS-UmM" secondAttribute="centerY" id="gcN-qa-VSp"/>
+                <constraint firstItem="94e-cx-5F3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="lrR-0B-5Xe"/>
+                <constraint firstItem="mvU-bN-fCr" firstAttribute="top" secondItem="fdb-Bb-Je3" secondAttribute="bottom" constant="5" id="oKd-3I-xzw"/>
+                <constraint firstItem="kvw-C2-fgJ" firstAttribute="leading" secondItem="9rw-uH-fcF" secondAttribute="trailing" constant="3" id="r0k-Cp-LZE"/>
+                <constraint firstItem="QGg-qY-UZz" firstAttribute="top" secondItem="mvU-bN-fCr" secondAttribute="bottom" constant="3" id="uwo-0O-xf9"/>
+                <constraint firstItem="kvw-C2-fgJ" firstAttribute="centerY" secondItem="9rw-uH-fcF" secondAttribute="centerY" id="vij-p5-OeX"/>
+                <constraint firstItem="XTq-81-DLa" firstAttribute="baseline" secondItem="mvU-bN-fCr" secondAttribute="baseline" id="xMo-a7-Zf6"/>
+            </constraints>
+            <connections>
+                <outlet property="orderSureBtn" destination="ona-iP-1VR" id="sIy-tE-eL2"/>
+                <outlet property="pmsPriceLabel" destination="SMx-n3-mtr" id="4Cg-S8-ytw"/>
+                <outlet property="promoTextLabel" destination="fdb-Bb-Je3" id="6Pb-cT-NxR"/>
+                <outlet property="realPriceLabel" destination="QGg-qY-UZz" id="sdh-Bb-JCV"/>
+                <outlet property="roomTypeInfoLabel" destination="mvU-bN-fCr" id="D6i-bR-Inh"/>
+                <outlet property="roomTypeLabel" destination="9rw-uH-fcF" id="a9v-xE-KMF"/>
+                <outlet property="saleDetailLabel" destination="XTq-81-DLa" id="llI-sC-kLR"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="145"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="gengduo.png" width="15" height="15"/>
+        <image name="jinyetejia" width="50" height="13"/>
+    </resources>
+</document>

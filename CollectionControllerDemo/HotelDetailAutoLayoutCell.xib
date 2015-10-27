@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelDetailAutoLayoutCellIdentifier" id="gTV-IL-0wX" customClass="HotelDetailAutoLayoutCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0w-LF-fyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2011" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sw-HJ-8Ou">
+                                <rect key="frame" x="0.0" y="11" width="50" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="可订" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drg-fQ-5Zl">
+                                <rect key="frame" x="0.0" y="29" width="50" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youchuang" translatesAutoresizingMaskIntoConstraints="NO" id="sT9-W5-tbz">
+                                <rect key="frame" x="35" y="0.0" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="G0w-LF-fyJ" secondAttribute="bottom" id="9Yz-9m-hpw"/>
+                <constraint firstItem="G0w-LF-fyJ" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="I65-z1-92t"/>
+                <constraint firstItem="G0w-LF-fyJ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="O0A-8R-sdm"/>
+                <constraint firstItem="G0w-LF-fyJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OOM-vI-GJW"/>
+                <constraint firstItem="G0w-LF-fyJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cIN-xM-l71"/>
+                <constraint firstAttribute="trailing" secondItem="G0w-LF-fyJ" secondAttribute="trailing" id="s7e-oM-CQ1"/>
+            </constraints>
+            <size key="customSize" width="48" height="50"/>
+            <connections>
+                <outlet property="bgView" destination="G0w-LF-fyJ" id="8Du-G3-H86"/>
+                <outlet property="roomNumLabel" destination="7sw-HJ-8Ou" id="xBv-nN-o5u"/>
+                <outlet property="roomStatusLabel" destination="drg-fQ-5Zl" id="gyH-SG-N8z"/>
+                <outlet property="windowImage" destination="sT9-W5-tbz" id="Ua2-Tz-1vy"/>
+            </connections>
+            <point key="canvasLocation" x="461" y="370"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="youchuang" width="15" height="15"/>
+    </resources>
+</document>
