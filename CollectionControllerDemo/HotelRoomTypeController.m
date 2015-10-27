@@ -22,6 +22,7 @@ static float const kItemViewWidth                             = 50;
 #import "HotelRoomTypeFooterView.h"
 #import "HotelDetailAutoLayoutCell.h"
 #import "HotelCommentIInfosCell.h"
+#import "HotelInfoCommentCell.h"
 @interface HotelRoomTypeController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @end
@@ -33,6 +34,7 @@ static  NSString *HotelRoomTypeFillterViewIdentifier  = @"HotelRoomTypeFillterVi
 static  NSString *HotelRoomTypeFooterViewIdentifier   = @"HotelRoomTypeFooterViewIdentifier";
 static  NSString *hotelDetailInfoCellIdentifier       = @"hotelDetailInfoCellIdentifier";
 static  NSString *HotelCommentIInfoCellIdentifier     = @"HotelCommentIInfoCellIdentifier";
+static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"酒店详情";
@@ -44,8 +46,12 @@ static  NSString *HotelCommentIInfoCellIdentifier     = @"HotelCommentIInfoCellI
     UINib *cellDetailNib = [UINib nibWithNibName:@"HotelDetailInfoCell" bundle:nil];
     [self.collectionView registerNib:cellDetailNib forCellWithReuseIdentifier:hotelDetailInfoCellIdentifier];
     
-    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
-    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
+//    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
+//    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
+//
+    
+    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
+    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
     
     
     UINib *filterNib = [UINib nibWithNibName:@"HotelRoomTypeFillterView" bundle:nil];
@@ -139,7 +145,8 @@ static  NSString *HotelCommentIInfoCellIdentifier     = @"HotelCommentIInfoCellI
         HotelDetailAutoLayoutCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelDetailAutoLayoutCellIdentifier forIndexPath:indexPath];
         return cell;
     }else{
-        HotelCommentIInfosCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier forIndexPath:indexPath];
+        HotelInfoCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelInfoCommentCellIdentifier forIndexPath:indexPath];
+        [cell loadCellData:@"1"];
         return cell;
     }
 }

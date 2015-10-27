@@ -41,14 +41,15 @@
 //    if (data.phone&&data.phone.length!=0) {
 //        NSRange range = NSMakeRange(4, 4);
 //        subStrPhone = [data.phone  stringByReplacingCharactersInRange:range withString:@"****"];
-//        self.commentNameLabel.text = [NSString stringWithFormat:@"%@",subStrPhone];
+        self.commentNameLabel.text = [NSString stringWithFormat:@"瞅啥瞅，没见过帅哥"];
 //    }
     //评论日期
-//    _commentDateLabel.text=data.createtime;
+    _commentDateLabel.text=@"2015-09-12 08:21:33";
     //评论分数
 //    [_commentGradeView loadGrade:data.allgrade];
 //    //评论内容
-//    _commentLabel.text=data.score;
+    _commentLabel.text=@"万圣节快到了，🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃,吓死爸爸了";
+    _commentDateLabel.lineBreakMode = NSLineBreakByWordWrapping;
 //    //过滤图片
 //    [_urlArray removeAllObjects];
 //    NSInteger maxCount=data.scorepic.count>4?4:data.scorepic.count;
@@ -79,9 +80,9 @@
 //
 //    //酒店回复
 //    if (data.hotelreply&& data.hotelreply.length>0 ) {
-//        _replayViewHeight.constant = 20.0f;
-//        _replyLabel.text = data.hotelreply;
-//       
+        _replayViewHeight.constant = 20.0f;
+        _replyLabel.text = @"眯客客服：欢迎您的评价，我们会更加努力做到更好。";
+//
 //    }else{
 //        _replayViewHeight.constant=0.0f;
 //    }

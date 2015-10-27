@@ -11,7 +11,7 @@
 @implementation HotelCommentIInfosCell
 
 - (void)awakeFromNib {
-    // Initialization code
+
     [self.startView loadGrade:5.0f];
 }
 
