@@ -37,10 +37,6 @@ static  NSString *HotelCommentIInfoCellIdentifier     = @"HotelCommentIInfoCellI
     [super viewDidLoad];
     self.title = @"酒店详情";
      self.clearsSelectionOnViewWillAppear = NO;
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, IPHONE_SCREEN_WIDTH, 64)];
-    [self.view addSubview:view];
-    // Register cell classes
-    self.collectionView.frame = CGRectMake(0, 64, IPHONE_SCREEN_WIDTH, IPHONE_SCREEN_HEIGHT-64);
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
     UINib *cellNib = [UINib nibWithNibName:@"HotelDetailAutoLayoutCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"HotelDetailAutoLayoutCellIdentifier"];
@@ -198,10 +194,18 @@ referenceSizeForFooterInSection:(NSInteger)section{
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout *)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(kCollectionViewToTopMargin,
-                            kCollectionViewToLeftMargin,
-                            kCollectionViewToBottomtMargin,
-                            kCollectionViewToRightMargin);
+    if (section<3&&section >0) {
+        return UIEdgeInsetsMake(kCollectionViewToTopMargin,
+                                kCollectionViewToLeftMargin,
+                                kCollectionViewToBottomtMargin,
+                                kCollectionViewToRightMargin);
+    }else{
+        return UIEdgeInsetsMake(kCollectionViewToTopMargin,
+                                0,
+                                kCollectionViewToBottomtMargin,
+                                0);
+    }
+
 }
 //返回这个UICollectionView是否可以被选择
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
