@@ -28,12 +28,15 @@
 }
 
 - (void)btnAction:(UIButton *)btn{
-    UICollectionViewFlowLayout *aFlowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [aFlowLayout setItemSize:CGSizeMake(50, 50)];
-    [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-  
-    HotelRoomTypeController *hotelRoomTypeController =  [[HotelRoomTypeController alloc]initWithCollectionViewLayout:aFlowLayout];
-    [self presentViewController:hotelRoomTypeController animated:YES completion:nil];
+//    UICollectionViewFlowLayout *aFlowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    [aFlowLayout setItemSize:CGSizeMake(50, 50)];
+//    [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+//  
+//    HotelRoomTypeController *hotelRoomTypeController =  [[HotelRoomTypeController alloc]initWithCollectionViewLayout:aFlowLayout];
+//    [self presentViewController:hotelRoomTypeController animated:YES completion:nil];
+
+    HotelRoomTypeController *hotelVC = [[HotelRoomTypeController alloc]initWithNibName:@"HotelRoomTypeController" bundle:nil];
+    [self.navigationController pushViewController:hotelVC animated:YES];
 }
 
 @end
