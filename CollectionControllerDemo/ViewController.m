@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HotelRoomTypeController.h"
+#import "DropdownMenuView.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
+    NSArray *titles = @[@"首页", @"好友圈", @"群微博", @"我的微博", @"特别关注"];
+    DropdownMenuView *menuView = [[DropdownMenuView alloc] initWithFrame:CGRectMake(0, 0,100, 44) titles:titles];
+    menuView.selectedAtIndex = ^(int index)
+    {
+        NSLog(@"selected title:%@", titles[index]);
+    };
+    self.navigationItem.titleView = menuView;
     
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 180, 50)];
     [button setBackgroundColor:[UIColor orangeColor]];
@@ -28,12 +38,6 @@
 }
 
 - (void)btnAction:(UIButton *)btn{
-//    UICollectionViewFlowLayout *aFlowLayout = [[UICollectionViewFlowLayout alloc] init];
-//    [aFlowLayout setItemSize:CGSizeMake(50, 50)];
-//    [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-//  
-//    HotelRoomTypeController *hotelRoomTypeController =  [[HotelRoomTypeController alloc]initWithCollectionViewLayout:aFlowLayout];
-//    [self presentViewController:hotelRoomTypeController animated:YES completion:nil];
 
     HotelRoomTypeController *hotelVC = [[HotelRoomTypeController alloc]initWithNibName:@"HotelRoomTypeController" bundle:nil];
     [self.navigationController pushViewController:hotelVC animated:YES];

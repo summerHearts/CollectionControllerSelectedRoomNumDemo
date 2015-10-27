@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D21BDFDE1300897E42 /* DropdownMenuView.m */; };
+		231277EE1BDFDE9300897E42 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */; };
+		231277EF1BDFDE9300897E42 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D91BDFDE9300897E42 /* MASConstraint.m */; };
+		231277F01BDFDE9300897E42 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277DB1BDFDE9300897E42 /* MASConstraintMaker.m */; };
+		231277F11BDFDE9300897E42 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277DD1BDFDE9300897E42 /* MASLayoutConstraint.m */; };
+		231277F21BDFDE9300897E42 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277E11BDFDE9300897E42 /* MASViewAttribute.m */; };
+		231277F31BDFDE9300897E42 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277E31BDFDE9300897E42 /* MASViewConstraint.m */; };
+		231277F41BDFDE9300897E42 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277E51BDFDE9300897E42 /* NSArray+MASAdditions.m */; };
+		231277F51BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277E81BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		231277F61BDFDE9300897E42 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277EA1BDFDE9300897E42 /* View+MASAdditions.m */; };
+		231277F71BDFDE9300897E42 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277ED1BDFDE9300897E42 /* ViewController+MASAdditions.m */; };
 		2382C3171BDF9C0900875752 /* HotelInfoCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */; };
 		2382C3181BDF9C0900875752 /* HotelInfoCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */; };
 		23A5231C1BDF537800B0AC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5231B1BDF537800B0AC98 /* main.m */; };
@@ -33,6 +44,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231277D11BDFDE1300897E42 /* DropdownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropdownMenuView.h; sourceTree = "<group>"; };
+		231277D21BDFDE1300897E42 /* DropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuView.m; sourceTree = "<group>"; };
+		231277D51BDFDE9300897E42 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		231277D71BDFDE9300897E42 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		231277D81BDFDE9300897E42 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		231277D91BDFDE9300897E42 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		231277DA1BDFDE9300897E42 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		231277DB1BDFDE9300897E42 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		231277DC1BDFDE9300897E42 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		231277DD1BDFDE9300897E42 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		231277DE1BDFDE9300897E42 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		231277DF1BDFDE9300897E42 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		231277E01BDFDE9300897E42 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		231277E11BDFDE9300897E42 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		231277E21BDFDE9300897E42 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		231277E31BDFDE9300897E42 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		231277E41BDFDE9300897E42 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		231277E51BDFDE9300897E42 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		231277E61BDFDE9300897E42 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		231277E71BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		231277E81BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		231277E91BDFDE9300897E42 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		231277EA1BDFDE9300897E42 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		231277EB1BDFDE9300897E42 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		231277EC1BDFDE9300897E42 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		231277ED1BDFDE9300897E42 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		2382C3141BDF9C0900875752 /* HotelInfoCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelInfoCommentCell.h; sourceTree = "<group>"; };
 		2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelInfoCommentCell.m; sourceTree = "<group>"; };
 		2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelInfoCommentCell.xib; sourceTree = "<group>"; };
@@ -81,6 +119,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231277D41BDFDE9300897E42 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				231277D51BDFDE9300897E42 /* MASCompositeConstraint.h */,
+				231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */,
+				231277D71BDFDE9300897E42 /* MASConstraint+Private.h */,
+				231277D81BDFDE9300897E42 /* MASConstraint.h */,
+				231277D91BDFDE9300897E42 /* MASConstraint.m */,
+				231277DA1BDFDE9300897E42 /* MASConstraintMaker.h */,
+				231277DB1BDFDE9300897E42 /* MASConstraintMaker.m */,
+				231277DC1BDFDE9300897E42 /* MASLayoutConstraint.h */,
+				231277DD1BDFDE9300897E42 /* MASLayoutConstraint.m */,
+				231277DE1BDFDE9300897E42 /* Masonry.h */,
+				231277DF1BDFDE9300897E42 /* MASUtilities.h */,
+				231277E01BDFDE9300897E42 /* MASViewAttribute.h */,
+				231277E11BDFDE9300897E42 /* MASViewAttribute.m */,
+				231277E21BDFDE9300897E42 /* MASViewConstraint.h */,
+				231277E31BDFDE9300897E42 /* MASViewConstraint.m */,
+				231277E41BDFDE9300897E42 /* NSArray+MASAdditions.h */,
+				231277E51BDFDE9300897E42 /* NSArray+MASAdditions.m */,
+				231277E61BDFDE9300897E42 /* NSArray+MASShorthandAdditions.h */,
+				231277E71BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				231277E81BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				231277E91BDFDE9300897E42 /* View+MASAdditions.h */,
+				231277EA1BDFDE9300897E42 /* View+MASAdditions.m */,
+				231277EB1BDFDE9300897E42 /* View+MASShorthandAdditions.h */,
+				231277EC1BDFDE9300897E42 /* ViewController+MASAdditions.h */,
+				231277ED1BDFDE9300897E42 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		23A5230E1BDF537800B0AC98 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +170,8 @@
 		23A523191BDF537800B0AC98 /* CollectionControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				231277D11BDFDE1300897E42 /* DropdownMenuView.h */,
+				231277D21BDFDE1300897E42 /* DropdownMenuView.m */,
 				23A5231D1BDF537800B0AC98 /* AppDelegate.h */,
 				23A5231E1BDF537800B0AC98 /* AppDelegate.m */,
 				23A523201BDF537800B0AC98 /* ViewController.h */,
@@ -127,6 +199,7 @@
 				2382C3141BDF9C0900875752 /* HotelInfoCommentCell.h */,
 				2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */,
 				2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */,
+				231277D41BDFDE9300897E42 /* Masonry */,
 				23A523231BDF537800B0AC98 /* Main.storyboard */,
 				23A523291BDF537800B0AC98 /* Assets.xcassets */,
 				23A523591BDF72FA00B0AC98 /* title.png */,
@@ -226,16 +299,27 @@
 			files = (
 				23A523221BDF537800B0AC98 /* ViewController.m in Sources */,
 				23A523491BDF644C00B0AC98 /* HotelRoomTypeFooterView.m in Sources */,
+				231277F51BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				23A523801BDF8BDE00B0AC98 /* HotelStarView.m in Sources */,
+				231277F31BDFDE9300897E42 /* MASViewConstraint.m in Sources */,
 				23A5237B1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m in Sources */,
+				231277F61BDFDE9300897E42 /* View+MASAdditions.m in Sources */,
+				231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */,
+				231277F21BDFDE9300897E42 /* MASViewAttribute.m in Sources */,
+				231277F01BDFDE9300897E42 /* MASConstraintMaker.m in Sources */,
 				2382C3171BDF9C0900875752 /* HotelInfoCommentCell.m in Sources */,
 				23A5231F1BDF537800B0AC98 /* AppDelegate.m in Sources */,
 				23A523451BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m in Sources */,
+				231277F71BDFDE9300897E42 /* ViewController+MASAdditions.m in Sources */,
 				23A523371BDF541600B0AC98 /* HotelRoomTypeController.m in Sources */,
+				231277F41BDFDE9300897E42 /* NSArray+MASAdditions.m in Sources */,
 				23A523281BDF537800B0AC98 /* CollectionControllerDemo.xcdatamodeld in Sources */,
+				231277F11BDFDE9300897E42 /* MASLayoutConstraint.m in Sources */,
+				231277EE1BDFDE9300897E42 /* MASCompositeConstraint.m in Sources */,
 				23A5231C1BDF537800B0AC98 /* main.m in Sources */,
 				23A523471BDF644C00B0AC98 /* HotelRoomTypeFillterView.m in Sources */,
 				23A5234E1BDF66C200B0AC98 /* HotelDetailInfoCell.m in Sources */,
+				231277EF1BDFDE9300897E42 /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
