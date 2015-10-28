@@ -1,0 +1,804 @@
+{
+    "$times$": "98ms",
+    "hotel": [
+        {
+            "hotelid": 2644,
+            "hotelname": "笑兔虎酒庄",
+            "hotelrulecode": 1002,
+            "visible": "T",
+            "online": "T",
+            "roomtype": [
+                {
+                    "roomtypeid": 8704,
+                    "roomtypename": "特价单人间",
+                    "roomtypeprice": 50,
+                    "roomtypepmsprice": 100,
+                    "vcroomnum": 4,
+                    "bed": {
+                        "count": 0,
+                        "beds": []
+                    },
+                    "area": 38,
+                    "bedtypename": "",
+                    "bedlength": "",
+                    "bathroomtype": "独立卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        }
+                    ],
+                    "valueaddedfa": [
+                        {
+                            "valueaddedfaid": 28,
+                            "valueaddedfaname": "茶具"
+                        },
+                        {
+                            "valueaddedfaid": 40,
+                            "valueaddedfaname": "电脑"
+                        },
+                        {
+                            "valueaddedfaid": 41,
+                            "valueaddedfaname": "书桌"
+                        },
+                        {
+                            "valueaddedfaid": 43,
+                            "valueaddedfaname": "地板"
+                        },
+                        {
+                            "valueaddedfaid": 53,
+                            "valueaddedfaname": "地砖"
+                        }
+                    ],
+                    "rooms": [
+                        {
+                            "roomid": 114444,
+                            "roomno": "110",
+                            "roomname": "特价单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114455,
+                            "roomno": "111",
+                            "roomname": "特价单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114451,
+                            "roomno": "118",
+                            "roomname": "特价单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114445,
+                            "roomno": "120",
+                            "roomname": "特价单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "promotype": "1",
+                    "isonpromo": "1",
+                    "promostarttime": "16:30",
+                    "promotext": "该房间正在参与今夜特价活动，预订享受超低价。",
+                    "promodustartsec": "19354",
+                    "promoduendsec": "57154",
+                    "promostatus": 0
+                },
+                {
+                    "roomtypeid": 8706,
+                    "roomtypename": "特价双人间",
+                    "roomtypeprice": 80,
+                    "roomtypepmsprice": 200,
+                    "vcroomnum": 5,
+                    "bed": {
+                        "count": 0,
+                        "beds": []
+                    },
+                    "area": 38,
+                    "bedtypename": "",
+                    "bedlength": "",
+                    "bathroomtype": "独立卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 38,
+                            "infrastructurename": "免费茶包"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 35,
+                            "infrastructurename": "毛巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        }
+                    ],
+                    "valueaddedfa": [
+                        {
+                            "valueaddedfaid": 28,
+                            "valueaddedfaname": "茶具"
+                        },
+                        {
+                            "valueaddedfaid": 40,
+                            "valueaddedfaname": "电脑"
+                        },
+                        {
+                            "valueaddedfaid": 41,
+                            "valueaddedfaname": "书桌"
+                        },
+                        {
+                            "valueaddedfaid": 42,
+                            "valueaddedfaname": "插线板"
+                        }
+                    ],
+                    "rooms": [
+                        {
+                            "roomid": 114462,
+                            "roomno": "202",
+                            "roomname": "特价双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114464,
+                            "roomno": "204",
+                            "roomname": "特价双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114468,
+                            "roomno": "206",
+                            "roomname": "特价双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114470,
+                            "roomno": "208",
+                            "roomname": "特价双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114465,
+                            "roomno": "210",
+                            "roomname": "特价双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "promotype": "2",
+                    "isonpromo": "1",
+                    "promostarttime": "15:46",
+                    "promotext": "今夜特价描述",
+                    "promodustartsec": "16714",
+                    "promoduendsec": "53554",
+                    "promostatus": 0
+                },
+                {
+                    "roomtypeid": 8703,
+                    "bednum": 1,
+                    "roomtypename": "特价三人间",
+                    "roomtypeprice": 120,
+                    "roomtypepmsprice": 300,
+                    "vcroomnum": 6,
+                    "bed": {
+                        "count": 1,
+                        "beds": [
+                            {
+                                "bedtypename": "单床房",
+                                "bedlength": "1.50米"
+                            }
+                        ]
+                    },
+                    "area": 23,
+                    "bedtypename": "单床房",
+                    "bedlength": "1.50米",
+                    "bathroomtype": "独立卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        },
+                        {
+                            "infrastructureid": 35,
+                            "infrastructurename": "毛巾"
+                        },
+                        {
+                            "infrastructureid": 31,
+                            "infrastructurename": "空调"
+                        }
+                    ],
+                    "valueaddedfa": [
+                        {
+                            "valueaddedfaid": 28,
+                            "valueaddedfaname": "茶具"
+                        },
+                        {
+                            "valueaddedfaid": 43,
+                            "valueaddedfaname": "地板"
+                        }
+                    ],
+                    "rooms": [
+                        {
+                            "roomid": 114473,
+                            "roomno": "301",
+                            "roomname": "特价三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114472,
+                            "roomno": "302",
+                            "roomname": "特价三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114475,
+                            "roomno": "303",
+                            "roomname": "特价三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114474,
+                            "roomno": "304",
+                            "roomname": "特价三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114479,
+                            "roomno": "307",
+                            "roomname": "特价三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "promotype": "3",
+                    "isonpromo": "1",
+                    "promostarttime": "21:00",
+                    "promotext": "今夜特价描述",
+                    "promodustartsec": "35554",
+                    "promoduendsec": "53554",
+                    "promostatus": 0
+                },
+                {
+                    "roomtypeid": 8686,
+                    "bednum": 2,
+                    "roomtypename": "单人间",
+                    "roomtypeprice": 10,
+                    "roomtypepmsprice": 100,
+                    "vcroomnum": 16,
+                    "bed": {
+                        "count": 2,
+                        "beds": [
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "1.80米"
+                            },
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "2.20米"
+                            }
+                        ]
+                    },
+                    "area": 38,
+                    "bedtypename": "双床房",
+                    "bedlength": "1.80,2.20米",
+                    "bathroomtype": "公共卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        },
+                        {
+                            "infrastructureid": 38,
+                            "infrastructurename": "免费茶包"
+                        },
+                        {
+                            "infrastructureid": 35,
+                            "infrastructurename": "毛巾"
+                        },
+                        {
+                            "infrastructureid": 31,
+                            "infrastructurename": "空调"
+                        }
+                    ],
+                    "valueaddedfa": [
+                        {
+                            "valueaddedfaid": 28,
+                            "valueaddedfaname": "茶具"
+                        },
+                        {
+                            "valueaddedfaid": 40,
+                            "valueaddedfaname": "电脑"
+                        },
+                        {
+                            "valueaddedfaid": 41,
+                            "valueaddedfaname": "书桌"
+                        },
+                        {
+                            "valueaddedfaid": 43,
+                            "valueaddedfaname": "地板"
+                        },
+                        {
+                            "valueaddedfaid": 53,
+                            "valueaddedfaname": "地砖"
+                        }
+                    ],
+                    "rooms": [
+                        {
+                            "roomid": 114448,
+                            "roomno": "101",
+                            "roomname": "单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": "T"
+                        },
+                        {
+                            "roomid": 114446,
+                            "roomno": "102",
+                            "roomname": "单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": "T"
+                        },
+                        {
+                            "roomid": 114443,
+                            "roomno": "103",
+                            "roomname": "单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": "T"
+                        },
+                        {
+                            "roomid": 114456,
+                            "roomno": "104",
+                            "roomname": "单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": "T"
+                        },
+                        {
+                            "roomid": 114450,
+                            "roomno": "105",
+                            "roomname": "单人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": "T"
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "isonpromo": "0"
+                },
+                {
+                    "roomtypeid": 8687,
+                    "bednum": 2,
+                    "roomtypename": "双人间",
+                    "roomtypeprice": 20,
+                    "roomtypepmsprice": 200,
+                    "vcroomnum": 5,
+                    "bed": {
+                        "count": 2,
+                        "beds": [
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "2.00米"
+                            },
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "1.80米"
+                            }
+                        ]
+                    },
+                    "area": 48,
+                    "bedtypename": "双床房",
+                    "bedlength": "2.00,1.80米",
+                    "bathroomtype": "独立卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 38,
+                            "infrastructurename": "免费茶包"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 35,
+                            "infrastructurename": "毛巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        }
+                    ],
+                    "valueaddedfa": [
+                        {
+                            "valueaddedfaid": 28,
+                            "valueaddedfaname": "茶具"
+                        },
+                        {
+                            "valueaddedfaid": 40,
+                            "valueaddedfaname": "电脑"
+                        },
+                        {
+                            "valueaddedfaid": 41,
+                            "valueaddedfaname": "书桌"
+                        },
+                        {
+                            "valueaddedfaid": 42,
+                            "valueaddedfaname": "插线板"
+                        }
+                    ],
+                    "rooms": [
+                        {
+                            "roomid": 114467,
+                            "roomno": "201",
+                            "roomname": "双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114463,
+                            "roomno": "203",
+                            "roomname": "双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114466,
+                            "roomno": "205",
+                            "roomname": "双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114469,
+                            "roomno": "207",
+                            "roomname": "双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114471,
+                            "roomno": "209",
+                            "roomname": "双人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "isonpromo": "0"
+                },
+                {
+                    "roomtypeid": 8688,
+                    "bednum": 2,
+                    "roomtypename": "三人间",
+                    "roomtypeprice": 30,
+                    "roomtypepmsprice": 300,
+                    "vcroomnum": 4,
+                    "bed": {
+                        "count": 2,
+                        "beds": [
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "2.20米"
+                            },
+                            {
+                                "bedtypename": "双床房",
+                                "bedlength": "2.00米"
+                            }
+                        ]
+                    },
+                    "area": 58,
+                    "bedtypename": "双床房",
+                    "bedlength": "2.20,2.00米",
+                    "bathroomtype": "独立卫浴",
+                    "infrastructure": [
+                        {
+                            "infrastructureid": 15,
+                            "infrastructurename": "24小时热水"
+                        },
+                        {
+                            "infrastructureid": 18,
+                            "infrastructurename": "拖鞋"
+                        },
+                        {
+                            "infrastructureid": 19,
+                            "infrastructurename": "电吹风"
+                        },
+                        {
+                            "infrastructureid": 20,
+                            "infrastructurename": "免费洗漱用品"
+                        },
+                        {
+                            "infrastructureid": 21,
+                            "infrastructurename": "免费瓶装水"
+                        },
+                        {
+                            "infrastructureid": 39,
+                            "infrastructurename": "电视"
+                        },
+                        {
+                            "infrastructureid": 37,
+                            "infrastructurename": "电热水壶"
+                        },
+                        {
+                            "infrastructureid": 36,
+                            "infrastructurename": "浴巾"
+                        },
+                        {
+                            "infrastructureid": 34,
+                            "infrastructurename": "免费wifi"
+                        },
+                        {
+                            "infrastructureid": 33,
+                            "infrastructurename": "有线宽带"
+                        }
+                    ],
+                    "valueaddedfa": [],
+                    "rooms": [
+                        {
+                            "roomid": 114477,
+                            "roomno": "305",
+                            "roomname": "三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114476,
+                            "roomno": "306",
+                            "roomname": "三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114481,
+                            "roomno": "309",
+                            "roomname": "三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        },
+                        {
+                            "roomid": 114480,
+                            "roomno": "310",
+                            "roomname": "三人间",
+                            "roomstatus": "vc",
+                            "isselected": "F",
+                            "haswindow": ""
+                        }
+                    ],
+                    "isfocus": "F",
+                    "iscashback": "F",
+                    "cashbackcost": 0,
+                    "vctxt": "",
+                    "isonpromo": "0"
+                }
+            ]
+        }
+    ],
+    "success": true
+}

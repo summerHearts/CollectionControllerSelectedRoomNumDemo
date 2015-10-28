@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HotelDetailRoomStatusModel.h"
 @interface HotelDetailAutoLayoutCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UILabel *roomNumLabel;
@@ -17,4 +17,5 @@
 -(void)setIsSelect;
 -(void)setCanSelect;
 -(void)setCantSelect;
+- (NSIndexPath *)loadCellData:(HotelRooms *)data indexPath:(NSIndexPath *)indexPath online:(NSString *)online;
 @end
