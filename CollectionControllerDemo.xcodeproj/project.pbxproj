@@ -79,7 +79,6 @@
 		23A5237B1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523791BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m */; };
 		23A5237C1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5237A1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib */; };
 		23A523801BDF8BDE00B0AC98 /* HotelStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */; };
-		23C481571BE0E6F3007DBEE4 /* NirKxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C481561BE0E6F3007DBEE4 /* NirKxMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,8 +220,6 @@
 		23A5237A1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelCommentIInfosCell.xib; path = ../HotelCommentIInfosCell.xib; sourceTree = "<group>"; };
 		23A5237E1BDF8BDE00B0AC98 /* HotelStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelStarView.h; path = ../HotelStarView.h; sourceTree = "<group>"; };
 		23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelStarView.m; path = ../HotelStarView.m; sourceTree = "<group>"; };
-		23C481551BE0E6F3007DBEE4 /* NirKxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NirKxMenu.h; sourceTree = "<group>"; };
-		23C481561BE0E6F3007DBEE4 /* NirKxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NirKxMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,8 +300,6 @@
 		230382DA1BE09228008F4E42 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23C481551BE0E6F3007DBEE4 /* NirKxMenu.h */,
-				23C481561BE0E6F3007DBEE4 /* NirKxMenu.m */,
 				231277D11BDFDE1300897E42 /* DropdownMenuView.h */,
 				231277D21BDFDE1300897E42 /* DropdownMenuView.m */,
 				230382A31BE06566008F4E42 /* HotelCell.h */,
@@ -564,7 +559,6 @@
 				230383201BE0AD64008F4E42 /* HotelDetailInfoModel.m in Sources */,
 				230382C81BE0748C008F4E42 /* MJDictionaryCache.m in Sources */,
 				230382CD1BE0748C008F4E42 /* MJPropertyType.m in Sources */,
-				23C481571BE0E6F3007DBEE4 /* NirKxMenu.m in Sources */,
 				231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */,
 				230382CC1BE0748C008F4E42 /* MJPropertyKey.m in Sources */,
 				231277F21BDFDE9300897E42 /* MASViewAttribute.m in Sources */,

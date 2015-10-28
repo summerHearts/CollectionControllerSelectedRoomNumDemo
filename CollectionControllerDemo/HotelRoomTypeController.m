@@ -172,7 +172,6 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    @imike("酒店评价显示样式问题");
     if(section <=self.detailRoomStatusModel.roomtype.count &&section>0){
 
       if ([[_showArray objectAtIndex:section-1] boolValue]) {
@@ -194,7 +193,6 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 //每个UICollectionView展示的内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    @imike("数据源从0-9,注意不一致的情况");
     if (indexPath.section == 0) {
         HotelDetailInfoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:hotelDetailInfoCellIdentifier forIndexPath:indexPath];
         [cell loadData:self.hotelListModel];

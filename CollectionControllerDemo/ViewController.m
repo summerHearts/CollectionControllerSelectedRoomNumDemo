@@ -28,19 +28,6 @@
         NSLog(@"selected title:%@", titles[index]);
     };
     self.navigationItem.titleView = menuView;
-    
-    
-    NSMutableArray *menuArray = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 8; i++) {
-       KxMenuItem *kxMenuItem =[KxMenuItem menuItem:[NSString stringWithFormat:@"clickMe%d",i] image:[UIImage imageNamed:@"title"] target:self action:@selector(btnActions:)];
-        [menuArray  addObject:kxMenuItem];
-    }
-    [KxMenu setTitleFont:[UIFont fontWithName:@"HelveticaNeue" size:15]];
-    KxMenuView *view = [[KxMenuView alloc]init];
-//    view.kxMenuViewOptions.arrowSize = 9.0f;
-    
-    
-//    [KxMenu showMenuInView:self.view fromRect:self.view.bounds menuItems:menuArray withOptions:nil];
 
     
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake((IPHONE_SCREEN_WIDTH-180)/2, (IPHONE_SCREEN_HEIGHT-50-64)/2, 180, 50)];
@@ -55,10 +42,6 @@
     
 }
 
-
-- (void)btnActions:(KxMenuItem *)item{
-    
-}
 - (void)btnAction:(UIButton *)btn{
 
     HotelRoomTypeController *hotelVC = [[HotelRoomTypeController alloc]initWithNibName:@"HotelRoomTypeController" bundle:nil];
