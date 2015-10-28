@@ -6,12 +6,6 @@
     <customFonts key="customFonts">
         <mutableArray key="SourceHanSansCN-Regular.otf">
             <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
-            <string>SourceHanSansCN-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -32,7 +26,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPz-Vf-fzm" customClass="HotelStarView">
-                        <rect key="frame" x="103" y="29" width="65" height="20"/>
+                        <rect key="frame" x="103" y="30" width="65" height="20"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="65" id="j3i-Yc-NzR"/>
@@ -40,9 +34,9 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsz-pX-tDA">
-                        <rect key="frame" x="180" y="32" width="30" height="14"/>
+                        <rect key="frame" x="180" y="33" width="31" height="15"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -61,41 +55,41 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门市价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gr-Re-kbw">
-                        <rect key="frame" x="250" y="35" width="33" height="13"/>
+                        <rect key="frame" x="248" y="35" width="33" height="14"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHF-bU-bmY">
-                        <rect key="frame" x="286" y="35" width="27" height="13"/>
+                        <rect key="frame" x="284" y="35" width="29" height="14"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkW-i7-ErF">
-                        <rect key="frame" x="103" y="69" width="30" height="20"/>
+                        <rect key="frame" x="103" y="70" width="31" height="20"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="mPa-wm-VyF"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAy-bb-iPB">
-                        <rect key="frame" x="103" y="49" width="30" height="18"/>
+                        <rect key="frame" x="103" y="50" width="31" height="18"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="vF6-kB-n20"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fanxian" translatesAutoresizingMaskIntoConstraints="NO" id="o8j-Jw-i9t">
-                        <rect key="frame" x="149" y="12" width="15" height="15"/>
+                        <rect key="frame" x="149" y="13" width="15" height="15"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="oNG-1y-MzZ"/>
@@ -118,13 +112,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-2b-qIx">
-                        <rect key="frame" x="103" y="10" width="40" height="19"/>
+                        <rect key="frame" x="103" y="10" width="40" height="20"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.27843137254901962" green="0.29019607843137257" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelcellsaleout" translatesAutoresizingMaskIntoConstraints="NO" id="65m-ot-Cbh">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yishoujin" translatesAutoresizingMaskIntoConstraints="NO" id="65m-ot-Cbh">
                         <rect key="frame" x="227" y="11" width="85" height="68"/>
                         <animations/>
                     </imageView>
@@ -182,7 +176,7 @@
     </objects>
     <resources>
         <image name="fanxian" width="15" height="15"/>
-        <image name="hotelcellsaleout" width="85" height="68"/>
         <image name="jinyetejia" width="50" height="13"/>
+        <image name="yishoujin" width="85" height="68"/>
     </resources>
 </document>

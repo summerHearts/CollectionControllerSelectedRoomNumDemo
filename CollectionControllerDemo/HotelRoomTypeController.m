@@ -48,8 +48,30 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"酒店详情";
-     self.clearsSelectionOnViewWillAppear = NO;
+    
+    [self configNavBar];
+    
+    [self registerNib];
+    
+    [self loadHotelRoomStatusData];
+}
+
+- (void)configNavBar{
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
+    titleLabel.font = [UIFont boldSystemFontOfSize:17];
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.text = @"酒店详情";
+    self.navigationItem.titleView = titleLabel;
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    self.navigationController.navigationBar.translucent = NO;
+}
+
+- (void)registerNib{
+    self.clearsSelectionOnViewWillAppear = NO;
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
     UINib *cellNib = [UINib nibWithNibName:@"HotelDetailAutoLayoutCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"HotelDetailAutoLayoutCellIdentifier"];
@@ -59,10 +81,10 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     
     UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
     [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
-
-//
-//    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
-//    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
+    
+    //
+    //    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
+    //    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
     
     
     UINib *cellHotelListNib = [UINib nibWithNibName:@"HotelListCell" bundle:nil];
@@ -74,10 +96,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     UINib *footerNib = [UINib nibWithNibName:@"HotelRoomTypeFooterView" bundle:nil];
     
     [self.collectionView  registerNib:footerNib forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier];
-    [self loadHotelRoomStatusData];
 }
-
-
 #pragma mark - 获取数据源
 - (void)loadHotelRoomStatusData{
     
