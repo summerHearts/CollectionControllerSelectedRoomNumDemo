@@ -35,7 +35,8 @@ static float const kItemViewWidth                             = 50;
 
 @property (nonatomic,strong) HotelListModel             *hotelListModel;
 @property (nonatomic,strong ) NSIndexPath               *lastIndexPath;
-
+//保存展现状态
+@property (nonatomic,strong) NSMutableArray *showArray;
 @property (nonatomic,copy)   NSString *roomNo;
 
 @end
@@ -52,6 +53,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initDataSource];
     [self configNavBar];
     
     [self registerNib];
@@ -59,6 +61,9 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     [self loadHotelRoomStatusData];
 }
 
+- (void)initDataSource{
+   _showArray=[NSMutableArray array];
+}
 - (void)configNavBar{
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
     titleLabel.font = [UIFont boldSystemFontOfSize:17];
@@ -113,10 +118,32 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     NSData *data = [NSData dataWithContentsOfFile:dataFilePath];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     self.detailRoomStatusModel = [[HotelDetailRoomStatusModel objectArrayWithKeyValuesArray:[rootDict objectForKey:@"hotel"]] objectAtIndex:0];
+    for (int i=0;i<self.detailRoomStatusModel.roomtype.count;i++) {
+        [self.showArray addObject:[NSNumber numberWithBool:NO]];
+    }
     NSIndexSet *reloadSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, self.detailRoomStatusModel.roomtype.count)];
     [self.collectionView reloadSections:reloadSet];
 
 }
+
+#pragma mark - UIButton Action
+
+-(void)moreButtonPressed:(UIButton *)sender{
+    NSNumber *oldNumber=[_showArray objectAtIndex:sender.tag];
+    NSNumber *newNumber;
+    if ([oldNumber boolValue]) {
+        sender.selected = YES;
+        newNumber=[NSNumber numberWithBool:NO];
+    }else{
+        sender.selected = NO;
+        newNumber=[NSNumber numberWithBool:YES];
+    }
+    [_showArray replaceObjectAtIndex:sender.tag withObject:newNumber];
+//    [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:sender.tag]];
+    [self.collectionView reloadData];
+    
+}
+
 #pragma mark -collectionView的代理和数据源协议
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
@@ -135,6 +162,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
         }else if([kind isEqual:UICollectionElementKindSectionFooter]){
             HotelRoomTypeFooterView *hotelRoomTypeFooterView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier
                                                                                                           forIndexPath:indexPath];
+            [hotelRoomTypeFooterView.moreBtn addTarget:self action:@selector(moreButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+
             reusableview =hotelRoomTypeFooterView;
         }
             return reusableview;
@@ -150,6 +179,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
             HotelRoomTypeFooterView *hotelRoomTypeFooterView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier
                                                                                                           forIndexPath:indexPath];
             hotelRoomTypeFooterView.frame = CGRectMake(0, 0, 0, 0);
+            [hotelRoomTypeFooterView.moreBtn addTarget:self action:@selector(moreButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
             reusableview =hotelRoomTypeFooterView;
         }
         return reusableview;
@@ -157,15 +187,24 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     
 }
 
+
+
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    @imike("酒店评价显示样式问题");
     if(section <=self.detailRoomStatusModel.roomtype.count &&section>0){
-        HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:section-1];
-        return roomType.rooms.count;
+
+      if ([[_showArray objectAtIndex:section-1] boolValue]) {
+            HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:section-1];
+            return roomType.rooms.count;
+        }else{
+             return 0;
+        }
     }else{
-        return 1;
+       return 1;
     }
+    
 }
 //定义展示的Section的个数
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -263,10 +302,7 @@ referenceSizeForFooterInSection:(NSInteger)section{
                                 kCollectionViewToBottomtMargin,
                                 kCollectionViewToRightMargin);
     }else{
-        return UIEdgeInsetsMake(0,
-                                0,
-                                0,
-                                0);
+        return UIEdgeInsetsZero;
     }
 
 }

@@ -26,7 +26,10 @@
                 <constraint firstAttribute="trailing" secondItem="KVy-rj-Kz3" secondAttribute="trailing" id="oHi-Wb-s39"/>
                 <constraint firstItem="KVy-rj-Kz3" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" id="w3n-cb-YSV"/>
             </constraints>
-            <point key="canvasLocation" x="332" y="229"/>
+            <connections>
+                <outlet property="moreBtn" destination="KVy-rj-Kz3" id="7Xx-3F-RuE"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="207"/>
         </collectionReusableView>
     </objects>
     <resources>

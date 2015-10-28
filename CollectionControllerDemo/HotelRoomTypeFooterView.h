@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HotelRoomTypeFooterView : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
 
 @end
