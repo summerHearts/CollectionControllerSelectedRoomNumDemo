@@ -27,7 +27,8 @@
     };
     self.navigationItem.titleView = menuView;
     
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 180, 50)];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake((IPHONE_SCREEN_WIDTH-180)/2, (IPHONE_SCREEN_HEIGHT-50-64)/2, 180, 50)];
+  
     [button setBackgroundColor:[UIColor orangeColor]];
     [button setTitle:@"push" forState:UIControlStateNormal];
     button.layer.cornerRadius = 5.0f;

@@ -118,7 +118,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     NSData *data = [NSData dataWithContentsOfFile:dataFilePath];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     self.detailRoomStatusModel = [[HotelDetailRoomStatusModel objectArrayWithKeyValuesArray:[rootDict objectForKey:@"hotel"]] objectAtIndex:0];
-    for (int i=0;i<self.detailRoomStatusModel.roomtype.count;i++) {
+    for (int i=0;i <self.detailRoomStatusModel.roomtype.count;i++) {
         [self.showArray addObject:[NSNumber numberWithBool:NO]];
     }
     NSIndexSet *reloadSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, self.detailRoomStatusModel.roomtype.count)];
@@ -129,7 +129,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 #pragma mark - UIButton Action
 
 -(void)moreButtonPressed:(UIButton *)sender{
-    NSNumber *oldNumber=[_showArray objectAtIndex:sender.tag];
+    NSNumber *oldNumber=[_showArray objectAtIndex:sender.tag-1];
     NSNumber *newNumber;
     if ([oldNumber boolValue]) {
         sender.selected = YES;
@@ -138,9 +138,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
         sender.selected = NO;
         newNumber=[NSNumber numberWithBool:YES];
     }
-    [_showArray replaceObjectAtIndex:sender.tag withObject:newNumber];
-//    [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:sender.tag]];
-    [self.collectionView reloadData];
+    [_showArray replaceObjectAtIndex:sender.tag-1 withObject:newNumber];
+    [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:sender.tag]];
     
 }
 
@@ -163,25 +162,12 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
             HotelRoomTypeFooterView *hotelRoomTypeFooterView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier
                                                                                                           forIndexPath:indexPath];
             [hotelRoomTypeFooterView.moreBtn addTarget:self action:@selector(moreButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-
+            hotelRoomTypeFooterView.moreBtn.tag = indexPath.section;
             reusableview =hotelRoomTypeFooterView;
         }
             return reusableview;
     }else{
-        if ([kind isEqual:UICollectionElementKindSectionHeader]) {
-            HotelRoomTypeFillterView *hotelRoomTypeFillterView =
-            [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                                               withReuseIdentifier:HotelRoomTypeFillterViewIdentifier
-                                                      forIndexPath:indexPath];
-            hotelRoomTypeFillterView.frame = CGRectMake(0, 0, 0, 0);
-            reusableview =hotelRoomTypeFillterView;
-        }else if([kind isEqual:UICollectionElementKindSectionFooter]){
-            HotelRoomTypeFooterView *hotelRoomTypeFooterView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier
-                                                                                                          forIndexPath:indexPath];
-            hotelRoomTypeFooterView.frame = CGRectMake(0, 0, 0, 0);
-            [hotelRoomTypeFooterView.moreBtn addTarget:self action:@selector(moreButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-            reusableview =hotelRoomTypeFooterView;
-        }
+        reusableview = nil;
         return reusableview;
     }
     
