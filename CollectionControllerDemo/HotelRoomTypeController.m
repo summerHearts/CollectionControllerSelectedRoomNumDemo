@@ -15,8 +15,6 @@ static float const kItemViewWidth                             = 50;
 
 #define IPHONE_SCREEN_WIDTH         ([[UIScreen mainScreen] bounds].size.width)
 #define IPHONE_SCREEN_HEIGHT        ([[UIScreen mainScreen] bounds].size.height)
-#define kScreenHeight               [UIScreen mainScreen].bounds.size.height
-#define kScreenWidth                [UIScreen mainScreen].bounds.size.width
 #import "HotelRoomTypeController.h"
 #import "HotelRoomTypeFillterView.h"
 #import "HotelRoomTypeFooterView.h"
@@ -89,10 +87,6 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     
     UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
     [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
-    
-    //
-    //    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
-    //    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
     
     
     UINib *cellHotelListNib = [UINib nibWithNibName:@"HotelListCell" bundle:nil];
@@ -248,12 +242,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 - (CGFloat)collectionView:(UICollectionView *)collectionView
                    layout:(UICollectionViewLayout *)collectionViewLayout
 minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    
-    if(section<=self.detailRoomStatusModel.roomtype.count&&section>0){
-        return (IPHONE_SCREEN_WIDTH -20- 50*5)/5;
-    }else{
-        return (IPHONE_SCREEN_WIDTH -20- 50*5)/5;
-    }
+       return (IPHONE_SCREEN_WIDTH -20- 50*5)/5;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
@@ -294,36 +283,43 @@ referenceSizeForFooterInSection:(NSInteger)section{
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:indexPath.section-1];
-    HotelRooms *roomItem= [roomType.rooms objectAtIndex:indexPath.item];
-    //在线
-    if ([self.detailRoomStatusModel.online isEqualToString:@"T"]) {
-        //可预o
-        if ([roomItem.roomstatus isEqualToString:@"vc"]) {
-            HotelDetailAutoLayoutCell *hotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:indexPath];
-            //不是同一个
-            if (![_lastIndexPath isEqual:indexPath]) {
-                [hotelDetailCollectionCell setIsSelect];
-                roomItem.isselected=@"T";
-                //上一个不为空
-                if (_lastIndexPath!=nil) {
-                    HotelDetailAutoLayoutCell *lastHotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:_lastIndexPath];
-                    [lastHotelDetailCollectionCell setCanSelect];
-                    
-                    HotelRoomtype *lastRoomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:_lastIndexPath.section-1];
-                    HotelRooms *lastRoomItem= [lastRoomType.rooms objectAtIndex:_lastIndexPath.item];
-                    lastRoomItem.isselected=@"F";
+    
+    if (indexPath.section<=self.detailRoomStatusModel.roomtype.count&&indexPath.section >0){
+        HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:indexPath.section-1];
+        HotelRooms *roomItem= [roomType.rooms objectAtIndex:indexPath.item];
+        //在线
+        if ([self.detailRoomStatusModel.online isEqualToString:@"T"]) {
+            //可预o
+            if ([roomItem.roomstatus isEqualToString:@"vc"]) {
+                HotelDetailAutoLayoutCell *hotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:indexPath];
+                //不是同一个
+                if (![_lastIndexPath isEqual:indexPath]) {
+                    [hotelDetailCollectionCell setIsSelect];
+                    roomItem.isselected=@"T";
+                    //上一个不为空
+                    if (_lastIndexPath!=nil) {
+                        HotelDetailAutoLayoutCell *lastHotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:_lastIndexPath];
+                        [lastHotelDetailCollectionCell setCanSelect];
+                        
+                        HotelRoomtype *lastRoomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:_lastIndexPath.section-1];
+                        HotelRooms *lastRoomItem= [lastRoomType.rooms objectAtIndex:_lastIndexPath.item];
+                        lastRoomItem.isselected=@"F";
+                    }
+                    _lastIndexPath=indexPath;
+                    _roomNo =[NSString stringWithFormat:@"%ld",(long)roomItem.roomid] ;
+                }else{
+                    [hotelDetailCollectionCell setCanSelect];
+                    roomItem.isselected=@"F";
+                    _lastIndexPath=nil;
+                    _roomNo=@"";
                 }
-                _lastIndexPath=indexPath;
-                _roomNo =[NSString stringWithFormat:@"%ld",(long)roomItem.roomid] ;
-            }else{
-                [hotelDetailCollectionCell setCanSelect];
-                roomItem.isselected=@"F";
-                _lastIndexPath=nil;
-                _roomNo=@"";
             }
         }
     }
+    else{
+        
+    }
+
 }
 
 //返回这个UICollectionView是否可以被选择

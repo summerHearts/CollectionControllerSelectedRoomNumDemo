@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #define IPHONE_SCREEN_WIDTH         ([[UIScreen mainScreen] bounds].size.width)
 #define IPHONE_SCREEN_HEIGHT        ([[UIScreen mainScreen] bounds].size.height)
-#define kScreenHeight               [UIScreen mainScreen].bounds.size.height
-#define kScreenWidth                [UIScreen mainScreen].bounds.size.width
 @interface ViewController : UIViewController
 
 
