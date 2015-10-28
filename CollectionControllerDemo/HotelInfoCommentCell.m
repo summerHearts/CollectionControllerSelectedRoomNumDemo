@@ -48,7 +48,7 @@
     //评论分数
 //    [_commentGradeView loadGrade:data.allgrade];
 //    //评论内容
-    _commentLabel.text=@"万圣节快到了，🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃,吓死爸爸了";
+    _commentLabel.text=@"万圣节快到了，🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃,吓死了";
     _commentLabel.lineBreakMode = NSLineBreakByWordWrapping;
 //    //过滤图片
 //    [_urlArray removeAllObjects];
@@ -76,8 +76,8 @@
 //
 //    //酒店回复
 //    if (data.hotelreply&& data.hotelreply.length>0 ) {
-        _replayViewHeight.constant = 20.0f;
-        _replyLabel.text = @"眯客客服：欢迎您的评价，我们会更加努力做到更好。";
+//        _replayViewHeight.constant = 20.0f;
+//        _replyLabel.text = @"眯客客服：欢迎您的评价，我们会更加努力做到更好。";
 //
 //    }else{
 //        _replayViewHeight.constant=0.0f;

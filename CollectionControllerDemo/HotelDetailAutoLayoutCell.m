@@ -53,7 +53,7 @@
 
 -(void)setIsSelect{
     self.layer.borderColor = [UIColor colorWithHexString:@"38a138"].CGColor;
-    [self.maskView setBackgroundColor:[UIColor colorWithHexString:@"38a138"]];
+    [self.bgView setBackgroundColor:[UIColor colorWithHexString:@"38a138"]];
     [_roomNumLabel setTextColor:[UIColor whiteColor]];
     [_roomStatusLabel setTextColor:[UIColor whiteColor]];
     _roomStatusLabel.text=@"已选";
@@ -61,7 +61,7 @@
 
 -(void)setCanSelect{
     self.layer.borderColor = [UIColor colorWithHexString:@"38a138"].CGColor;
-//    [self.bgView setBackgroundColor:[UIColor colorWithHexString:@"ffffee"]];
+    [self.bgView setBackgroundColor:[UIColor whiteColor]];
     [_roomNumLabel setTextColor:[UIColor colorWithHexString:@"38a138"]];
     [_roomStatusLabel setTextColor:[UIColor colorWithHexString:@"38a138"]];
     _roomStatusLabel.text=@"可订";

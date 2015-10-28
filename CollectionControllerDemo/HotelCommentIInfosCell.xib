@@ -7,10 +7,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCommentIInfoCellIdentifier" id="gTV-IL-0wX" customClass="HotelCommentIInfosCell">
-            <rect key="frame" x="0.0" y="0.0" width="332" height="169"/>
+            <rect key="frame" x="0.0" y="0.0" width="332" height="166"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="332" height="169"/>
+                <rect key="frame" x="0.0" y="0.0" width="332" height="166"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  查看全部(9条评论)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1N-Gn-WYI">
                         <rect key="frame" x="10" y="4" width="246" height="18"/>
@@ -104,7 +104,7 @@
                 <constraint firstAttribute="trailing" secondItem="ukl-JM-NfU" secondAttribute="trailing" id="yGW-6V-F5X"/>
                 <constraint firstAttribute="trailing" secondItem="rsv-UE-AoA" secondAttribute="trailing" constant="8" id="z6y-ro-tXJ"/>
             </constraints>
-            <size key="customSize" width="332" height="169"/>
+            <size key="customSize" width="332" height="166"/>
             <connections>
                 <outlet property="connectPersonLabel" destination="tSM-Ga-ssr" id="Lls-Pn-3Fi"/>
                 <outlet property="createTimeLabel" destination="rsv-UE-AoA" id="VPu-AB-QgN"/>
@@ -113,7 +113,7 @@
                 <outlet property="hotelCountLabel" destination="q1N-Gn-WYI" id="6Ne-hD-uzX"/>
                 <outlet property="startView" destination="V7a-Xi-LiW" id="bOa-Lg-43P"/>
             </connections>
-            <point key="canvasLocation" x="510" y="103.5"/>
+            <point key="canvasLocation" x="231" y="77"/>
         </collectionViewCell>
     </objects>
 </document>

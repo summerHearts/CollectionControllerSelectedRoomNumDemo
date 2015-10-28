@@ -10,7 +10,7 @@
 
 @interface HotelListCell()
 
-@property(strong,nonatomic) NSString *type;
+@property(copy,nonatomic) NSString *type;
 
 @end
 
@@ -21,6 +21,7 @@
 }
 
 -(void)loadCellData:(id)data{
+    [super loadCellData:data];
     self.hotelNameLabel.text = @"上海乐住技术有限公司";
     //月销售
     self.hotelMonthSaleLabel.text=@"200";
@@ -35,22 +36,22 @@
     //是否返现
         [_hotelCashBackImageView setHidden:NO];
  
-    //酒店距离
-    switch ([_type intValue]) {
-        case -1:
-            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您200m"];
-            break;
-        case 0:
-            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您100m"];
-            break;
-        case 1:
-        case 4:
-            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您300m"];
-            break;
-        default:
-            self.hotelCityLabel.text=[NSString stringWithFormat:@"距目的地100m"];
-            break;
-    }
+//    //酒店距离
+//    switch ([_type intValue]) {
+//        case -1:
+//            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您200m"];
+//            break;
+//        case 0:
+//            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您100m"];
+//            break;
+//        case 1:
+//        case 4:
+//            self.hotelCityLabel.text=[NSString stringWithFormat:@"距您300m"];
+//            break;
+//        default:
+//            self.hotelCityLabel.text=[NSString stringWithFormat:@"距目的地100m"];
+//            break;
+//    }
     //酒店图片
 //    Hotelpic *hotelpic=[data.hotelpic safeObjectAtIndex:0];
 //    Pic *pic=[hotelpic.pic safeObjectAtIndex:0];

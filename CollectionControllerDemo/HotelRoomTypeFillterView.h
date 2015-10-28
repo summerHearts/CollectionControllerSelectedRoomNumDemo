@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HotelDetailRoomStatusModel.h"
 @interface HotelRoomTypeFillterView : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UIImageView *hotelPromoImage;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *roomTypeLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *promoTextLabel;
@@ -21,4 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *saleDetailLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *orderSureBtn;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *promoImageWidth;
+
+- (void)loadHotelRoomTypeData:(HotelRoomtype *)roomType;
 @end

@@ -14,6 +14,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinyetejia" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-MS-UmM">
                     <rect key="frame" x="8" y="10" width="50" height="13"/>
                     <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="05r-a5-q2V"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特价单人房" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-uH-fcF">
                     <rect key="frame" x="58" y="8" width="70" height="17"/>
@@ -112,15 +115,17 @@
                 <constraint firstItem="XTq-81-DLa" firstAttribute="baseline" secondItem="mvU-bN-fCr" secondAttribute="baseline" id="xMo-a7-Zf6"/>
             </constraints>
             <connections>
+                <outlet property="hotelPromoImage" destination="gWg-MS-UmM" id="ymJ-76-5v8"/>
                 <outlet property="orderSureBtn" destination="ona-iP-1VR" id="sIy-tE-eL2"/>
                 <outlet property="pmsPriceLabel" destination="SMx-n3-mtr" id="4Cg-S8-ytw"/>
+                <outlet property="promoImageWidth" destination="05r-a5-q2V" id="ymK-hk-4SX"/>
                 <outlet property="promoTextLabel" destination="fdb-Bb-Je3" id="6Pb-cT-NxR"/>
                 <outlet property="realPriceLabel" destination="QGg-qY-UZz" id="sdh-Bb-JCV"/>
                 <outlet property="roomTypeInfoLabel" destination="mvU-bN-fCr" id="D6i-bR-Inh"/>
                 <outlet property="roomTypeLabel" destination="9rw-uH-fcF" id="a9v-xE-KMF"/>
                 <outlet property="saleDetailLabel" destination="XTq-81-DLa" id="llI-sC-kLR"/>
             </connections>
-            <point key="canvasLocation" x="320" y="145"/>
+            <point key="canvasLocation" x="449" y="130"/>
         </collectionReusableView>
     </objects>
     <resources>

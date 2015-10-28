@@ -27,6 +27,7 @@ static float const kItemViewWidth                             = 50;
 #import "CollectionControllerDemo.pch"
 #import "HotelDetailRoomStatusModel.h"
 #import "HotelListCell.h"
+#import "HotelDetailInfoCell.h"
 #import "MJExtension.h"
 @interface HotelRoomTypeController ()<UICollectionViewDataSource, UICollectionViewDelegate,
                                       UICollectionViewDelegateFlowLayout>
@@ -34,6 +35,8 @@ static float const kItemViewWidth                             = 50;
 
 @property (nonatomic,strong) HotelListModel             *hotelListModel;
 @property (nonatomic,strong ) NSIndexPath               *lastIndexPath;
+
+@property (nonatomic,copy)   NSString *roomNo;
 
 @end
 
@@ -110,7 +113,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     NSData *data = [NSData dataWithContentsOfFile:dataFilePath];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     self.detailRoomStatusModel = [[HotelDetailRoomStatusModel objectArrayWithKeyValuesArray:[rootDict objectForKey:@"hotel"]] objectAtIndex:0];
-    [self.collectionView reloadData];
+    NSIndexSet *reloadSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, self.detailRoomStatusModel.roomtype.count)];
+    [self.collectionView reloadSections:reloadSet];
 
 }
 #pragma mark -collectionView的代理和数据源协议
@@ -125,6 +129,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
             [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                                                withReuseIdentifier:HotelRoomTypeFillterViewIdentifier
                                                       forIndexPath:indexPath];
+            HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:indexPath.section-1];
+            [hotelRoomTypeFillterView loadHotelRoomTypeData:roomType];
             reusableview =hotelRoomTypeFillterView;
         }else if([kind isEqual:UICollectionElementKindSectionFooter]){
             HotelRoomTypeFooterView *hotelRoomTypeFooterView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HotelRoomTypeFooterViewIdentifier
@@ -171,7 +177,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 {
     @imike("数据源从0-9,注意不一致的情况");
     if (indexPath.section == 0) {
-        HotelDetailAutoLayoutCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:hotelDetailInfoCellIdentifier forIndexPath:indexPath];
+        HotelDetailInfoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:hotelDetailInfoCellIdentifier forIndexPath:indexPath];
+        [cell loadData:self.hotelListModel];
         return cell;
 
     }else if(indexPath.section<=self.detailRoomStatusModel.roomtype.count&&indexPath>0){
@@ -263,6 +270,40 @@ referenceSizeForFooterInSection:(NSInteger)section{
     }
 
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:indexPath.section-1];
+    HotelRooms *roomItem= [roomType.rooms objectAtIndex:indexPath.item];
+    //在线
+    if ([self.detailRoomStatusModel.online isEqualToString:@"T"]) {
+        //可预o
+        if ([roomItem.roomstatus isEqualToString:@"vc"]) {
+            HotelDetailAutoLayoutCell *hotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:indexPath];
+            //不是同一个
+            if (![_lastIndexPath isEqual:indexPath]) {
+                [hotelDetailCollectionCell setIsSelect];
+                roomItem.isselected=@"T";
+                //上一个不为空
+                if (_lastIndexPath!=nil) {
+                    HotelDetailAutoLayoutCell *lastHotelDetailCollectionCell=(HotelDetailAutoLayoutCell *)[collectionView cellForItemAtIndexPath:_lastIndexPath];
+                    [lastHotelDetailCollectionCell setCanSelect];
+                    
+                    HotelRoomtype *lastRoomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:_lastIndexPath.section-1];
+                    HotelRooms *lastRoomItem= [lastRoomType.rooms objectAtIndex:_lastIndexPath.item];
+                    lastRoomItem.isselected=@"F";
+                }
+                _lastIndexPath=indexPath;
+                _roomNo =[NSString stringWithFormat:@"%ld",(long)roomItem.roomid] ;
+            }else{
+                [hotelDetailCollectionCell setCanSelect];
+                roomItem.isselected=@"F";
+                _lastIndexPath=nil;
+                _roomNo=@"";
+            }
+        }
+    }
+}
+
 //返回这个UICollectionView是否可以被选择
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
