@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *createTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hotelCommentLabel;
 @property (weak, nonatomic) IBOutlet UIView *hotelContainView;
-
+- (void)loadData:(id)data;
 @end
 

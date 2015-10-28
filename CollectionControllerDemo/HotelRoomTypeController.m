@@ -47,12 +47,12 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     UINib *cellDetailNib = [UINib nibWithNibName:@"HotelDetailInfoCell" bundle:nil];
     [self.collectionView registerNib:cellDetailNib forCellWithReuseIdentifier:hotelDetailInfoCellIdentifier];
     
-//    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
-//    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
+    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelCommentIInfosCell" bundle:nil];
+    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier];
+
 //
-    
-    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
-    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
+//    UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
+//    [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
     
     
     UINib *cellHotelListNib = [UINib nibWithNibName:@"HotelListCell" bundle:nil];
@@ -149,8 +149,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
         HotelDetailAutoLayoutCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelDetailAutoLayoutCellIdentifier forIndexPath:indexPath];
         return cell;
     }else if(indexPath.section == 3){
-        HotelInfoCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelInfoCommentCellIdentifier forIndexPath:indexPath];
-        [cell loadCellData:@"1"];
+        HotelCommentIInfosCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelCommentIInfoCellIdentifier forIndexPath:indexPath];
+        [cell loadData:@"1"];
         return cell;
     }else{
         HotelListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelListCellIdentifier forIndexPath:indexPath];
@@ -181,6 +181,8 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
     if (section == 0) {
         return 0;
+    }else if(section<3&&section>0){
+        return (IPHONE_SCREEN_WIDTH -20- 50*5)/5;
     }else{
         return (IPHONE_SCREEN_WIDTH -20- 50*5)/5;
     }

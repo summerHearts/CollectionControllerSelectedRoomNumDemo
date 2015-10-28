@@ -102,12 +102,12 @@
                             <constraint firstAttribute="height" constant="15" id="q6c-f8-CoO"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelcellpromo" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-4D-JuU">
-                        <rect key="frame" x="253" y="58" width="60" height="17"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinyetejia" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-4D-JuU">
+                        <rect key="frame" x="260" y="62" width="50" height="13"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="17" id="XAc-Jh-XFh"/>
-                            <constraint firstAttribute="width" constant="60" id="bEU-Ex-oRh"/>
+                            <constraint firstAttribute="height" constant="13" id="XAc-Jh-XFh"/>
+                            <constraint firstAttribute="width" constant="50" id="bEU-Ex-oRh"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md7-kU-IH7">
@@ -156,7 +156,7 @@
                     <constraint firstAttribute="bottom" secondItem="su9-dW-o61" secondAttribute="bottom" id="lPj-9I-z0W"/>
                     <constraint firstItem="9b3-mt-ZBA" firstAttribute="leading" secondItem="Cg7-XB-rJn" secondAttribute="trailing" constant="2" id="nBT-Zd-fKX"/>
                     <constraint firstItem="WAy-bb-iPB" firstAttribute="top" secondItem="IPz-Vf-fzm" secondAttribute="bottom" id="njb-qn-poo"/>
-                    <constraint firstItem="Xsr-4D-JuU" firstAttribute="trailing" secondItem="AHF-bU-bmY" secondAttribute="trailing" id="pVq-zp-Oob"/>
+                    <constraint firstItem="Xsr-4D-JuU" firstAttribute="trailing" secondItem="AHF-bU-bmY" secondAttribute="trailing" constant="-3" id="pVq-zp-Oob"/>
                     <constraint firstItem="su9-dW-o61" firstAttribute="top" secondItem="5H1-2y-UDN" secondAttribute="top" id="rVY-6f-rGU"/>
                     <constraint firstItem="Lsz-pX-tDA" firstAttribute="leading" secondItem="IPz-Vf-fzm" secondAttribute="trailing" constant="12" id="s4O-ZS-r7m"/>
                     <constraint firstItem="Cg7-XB-rJn" firstAttribute="bottom" secondItem="9b3-mt-ZBA" secondAttribute="bottom" constant="2" id="ve6-P0-A9I"/>
@@ -182,7 +182,7 @@
     </objects>
     <resources>
         <image name="fanxian" width="15" height="15"/>
-        <image name="hotelcellpromo" width="50" height="13"/>
         <image name="hotelcellsaleout" width="85" height="68"/>
+        <image name="jinyetejia" width="50" height="13"/>
     </resources>
 </document>
