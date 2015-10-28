@@ -52,6 +52,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     [super viewDidLoad];
     
     [self initDataSource];
+    
     [self configNavBar];
     
     [self registerNib];
