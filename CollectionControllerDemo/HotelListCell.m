@@ -21,7 +21,7 @@
 }
 
 -(void)loadCellData:(id)data{
-    self.hotelNameLabel.text = @"上海乐住信息技术有限公司";
+    self.hotelNameLabel.text = @"上海乐住技术有限公司";
     //月销售
     self.hotelMonthSaleLabel.text=@"200";
     //价格

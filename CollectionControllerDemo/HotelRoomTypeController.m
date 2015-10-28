@@ -23,14 +23,17 @@ static float const kItemViewWidth                             = 50;
 #import "HotelDetailAutoLayoutCell.h"
 #import "HotelCommentIInfosCell.h"
 #import "HotelInfoCommentCell.h"
+#import "HotelListModel.h"
 #import "CollectionControllerDemo.pch"
 #import "HotelDetailRoomStatusModel.h"
 #import "HotelListCell.h"
 #import "MJExtension.h"
-@interface HotelRoomTypeController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface HotelRoomTypeController ()<UICollectionViewDataSource, UICollectionViewDelegate,
+                                      UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong) HotelDetailRoomStatusModel *detailRoomStatusModel;
 
-@property (nonatomic,strong ) NSIndexPath                *lastIndexPath;
+@property (nonatomic,strong) HotelListModel             *hotelListModel;
+@property (nonatomic,strong ) NSIndexPath               *lastIndexPath;
 
 @end
 
@@ -42,6 +45,7 @@ static  NSString *HotelRoomTypeFooterViewIdentifier   = @"HotelRoomTypeFooterVie
 static  NSString *hotelDetailInfoCellIdentifier       = @"hotelDetailInfoCellIdentifier";
 static  NSString *HotelCommentIInfoCellIdentifier     = @"HotelCommentIInfoCellIdentifier";
 static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellIdentifier";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"酒店详情";
@@ -73,13 +77,20 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     [self loadHotelRoomStatusData];
 }
 
+
 #pragma mark - 获取数据源
 - (void)loadHotelRoomStatusData{
+    
+    NSString *hotelInfodataFilePath = [[NSBundle mainBundle] pathForResource:@"hotelInfo" ofType:@"json"];
+    NSData *hotelInfodata = [NSData dataWithContentsOfFile:hotelInfodataFilePath];
+    NSDictionary *HotelInforootDict = [NSJSONSerialization JSONObjectWithData:hotelInfodata options:NSJSONReadingAllowFragments error:nil];
+    self.hotelListModel = [[HotelListModel objectArrayWithKeyValuesArray:[HotelInforootDict objectForKey:@"hotel"]] objectAtIndex:0];
+    
+    
     NSString *dataFilePath = [[NSBundle mainBundle] pathForResource:@"qunale" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:dataFilePath];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     self.detailRoomStatusModel = [[HotelDetailRoomStatusModel objectArrayWithKeyValuesArray:[rootDict objectForKey:@"hotel"]] objectAtIndex:0];
-    
     [self.collectionView reloadData];
 
 }
@@ -124,9 +135,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 1;
-    }else if(section <=self.detailRoomStatusModel.roomtype.count &&section>0){
+    if(section <=self.detailRoomStatusModel.roomtype.count &&section>0){
         HotelRoomtype *roomType  = [self.detailRoomStatusModel.roomtype objectAtIndex:section-1];
         return roomType.rooms.count;
     }else{
