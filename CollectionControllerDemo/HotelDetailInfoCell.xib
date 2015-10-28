@@ -209,7 +209,7 @@
                 <constraint firstItem="0dt-ZX-ebl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="yE1-vU-gyF"/>
             </constraints>
             <size key="customSize" width="347" height="187"/>
-            <point key="canvasLocation" x="192.5" y="139.5"/>
+            <point key="canvasLocation" x="-132.5" y="139.5"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -185,7 +185,7 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     if (indexPath.section>0&&indexPath.section<=self.detailRoomStatusModel.roomtype.count) {
          return CGSizeMake(kItemViewHeight, kItemViewWidth);
     }else if(indexPath.section == 0){
-        return CGSizeMake(IPHONE_SCREEN_WIDTH, 230);
+        return CGSizeMake(IPHONE_SCREEN_WIDTH, 223);
     }else if(indexPath.section == self.detailRoomStatusModel.roomtype.count+1){
         return CGSizeMake(IPHONE_SCREEN_WIDTH, 169);
     }else{
@@ -237,9 +237,9 @@ referenceSizeForFooterInSection:(NSInteger)section{
                                 kCollectionViewToBottomtMargin,
                                 kCollectionViewToRightMargin);
     }else{
-        return UIEdgeInsetsMake(kCollectionViewToTopMargin,
+        return UIEdgeInsetsMake(0,
                                 0,
-                                kCollectionViewToBottomtMargin,
+                                0,
                                 0);
     }
 
