@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CollectionControllerDemo/HotelRoomTypeController.m"
-            timestampString = "467644391.923205"
+            timestampString = "467691736.278376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-collectionView:layout:referenceSizeForFooterInSection:"
             landmarkType = "5">
          </BreakpointContent>

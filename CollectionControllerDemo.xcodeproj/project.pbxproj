@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230382A01BE06514008F4E42 /* HotelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2303829E1BE06514008F4E42 /* HotelListCell.m */; settings = {ASSET_TAGS = (); }; };
+		230382A11BE06514008F4E42 /* HotelListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2303829F1BE06514008F4E42 /* HotelListCell.xib */; settings = {ASSET_TAGS = (); }; };
+		230382A41BE06566008F4E42 /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382A21BE06566008F4E42 /* HotelCell.m */; settings = {ASSET_TAGS = (); }; };
 		231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D21BDFDE1300897E42 /* DropdownMenuView.m */; };
 		231277EE1BDFDE9300897E42 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */; };
 		231277EF1BDFDE9300897E42 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D91BDFDE9300897E42 /* MASConstraint.m */; };
@@ -44,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2303829D1BE06514008F4E42 /* HotelListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelListCell.h; sourceTree = "<group>"; };
+		2303829E1BE06514008F4E42 /* HotelListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelListCell.m; sourceTree = "<group>"; };
+		2303829F1BE06514008F4E42 /* HotelListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelListCell.xib; sourceTree = "<group>"; };
+		230382A21BE06566008F4E42 /* HotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelCell.m; sourceTree = "<group>"; };
+		230382A31BE06566008F4E42 /* HotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelCell.h; sourceTree = "<group>"; };
 		231277D11BDFDE1300897E42 /* DropdownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropdownMenuView.h; sourceTree = "<group>"; };
 		231277D21BDFDE1300897E42 /* DropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuView.m; sourceTree = "<group>"; };
 		231277D51BDFDE9300897E42 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -170,6 +178,8 @@
 		23A523191BDF537800B0AC98 /* CollectionControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				230382A31BE06566008F4E42 /* HotelCell.h */,
+				230382A21BE06566008F4E42 /* HotelCell.m */,
 				231277D11BDFDE1300897E42 /* DropdownMenuView.h */,
 				231277D21BDFDE1300897E42 /* DropdownMenuView.m */,
 				23A5231D1BDF537800B0AC98 /* AppDelegate.h */,
@@ -199,6 +209,9 @@
 				2382C3141BDF9C0900875752 /* HotelInfoCommentCell.h */,
 				2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */,
 				2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */,
+				2303829D1BE06514008F4E42 /* HotelListCell.h */,
+				2303829E1BE06514008F4E42 /* HotelListCell.m */,
+				2303829F1BE06514008F4E42 /* HotelListCell.xib */,
 				231277D41BDFDE9300897E42 /* Masonry */,
 				23A523231BDF537800B0AC98 /* Main.storyboard */,
 				23A523291BDF537800B0AC98 /* Assets.xcassets */,
@@ -286,6 +299,7 @@
 				2382C3181BDF9C0900875752 /* HotelInfoCommentCell.xib in Resources */,
 				23A523381BDF541600B0AC98 /* HotelRoomTypeController.xib in Resources */,
 				23A5237C1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib in Resources */,
+				230382A11BE06514008F4E42 /* HotelListCell.xib in Resources */,
 				23A5235A1BDF72FA00B0AC98 /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +321,9 @@
 				231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */,
 				231277F21BDFDE9300897E42 /* MASViewAttribute.m in Sources */,
 				231277F01BDFDE9300897E42 /* MASConstraintMaker.m in Sources */,
+				230382A01BE06514008F4E42 /* HotelListCell.m in Sources */,
 				2382C3171BDF9C0900875752 /* HotelInfoCommentCell.m in Sources */,
+				230382A41BE06566008F4E42 /* HotelCell.m in Sources */,
 				23A5231F1BDF537800B0AC98 /* AppDelegate.m in Sources */,
 				23A523451BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m in Sources */,
 				231277F71BDFDE9300897E42 /* ViewController+MASAdditions.m in Sources */,

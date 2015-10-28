@@ -49,7 +49,7 @@
 //    [_commentGradeView loadGrade:data.allgrade];
 //    //评论内容
     _commentLabel.text=@"万圣节快到了，🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃,吓死爸爸了";
-    _commentDateLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    _commentLabel.lineBreakMode = NSLineBreakByWordWrapping;
 //    //过滤图片
 //    [_urlArray removeAllObjects];
 //    NSInteger maxCount=data.scorepic.count>4?4:data.scorepic.count;
@@ -62,16 +62,12 @@
 //            NSString *filterUrl =  [url stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 //            [_urlArray addObject:filterUrl];
 //        }
-//        //评论图片
-//        for (int i = 0; i < 4; i++) {
-//            UIButton *imageView = [_imageViewArray objectAtIndex:i];
-//            if (i<data.scorepic.count) {
-//                [imageView sd_setImageWithURL:[NSURL URLWithString:[_urlArray objectAtIndex:i]] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"imike"]];
-//                [imageView setHidden:NO];
-//            }else{
-//                [imageView setHidden:YES];
-//            }
-//        }
+        //评论图片
+        for (int i = 0; i < 4; i++) {
+            UIButton *imageView = [_imageViewArray objectAtIndex:i];
+            [imageView setImage:[UIImage imageNamed:@"title"] forState:UIControlStateNormal];
+            imageView.hidden = NO;
+        }
 //    }
 //    else{
 //    

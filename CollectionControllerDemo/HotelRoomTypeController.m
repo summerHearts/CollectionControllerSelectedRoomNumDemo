@@ -23,6 +23,7 @@ static float const kItemViewWidth                             = 50;
 #import "HotelDetailAutoLayoutCell.h"
 #import "HotelCommentIInfosCell.h"
 #import "HotelInfoCommentCell.h"
+#import "HotelListCell.h"
 @interface HotelRoomTypeController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @end
@@ -53,6 +54,9 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     UINib *cellHotelCommentNib = [UINib nibWithNibName:@"HotelInfoCommentCell" bundle:nil];
     [self.collectionView registerNib:cellHotelCommentNib forCellWithReuseIdentifier:HotelInfoCommentCellIdentifier];
     
+    
+    UINib *cellHotelListNib = [UINib nibWithNibName:@"HotelListCell" bundle:nil];
+    [self.collectionView registerNib:cellHotelListNib forCellWithReuseIdentifier:HotelListCellIdentifier];
     
     UINib *filterNib = [UINib nibWithNibName:@"HotelRoomTypeFillterView" bundle:nil];
     [self.collectionView  registerNib:filterNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HotelRoomTypeFillterViewIdentifier];
@@ -144,8 +148,12 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
     }else if(indexPath.section<3&&indexPath>0){
         HotelDetailAutoLayoutCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelDetailAutoLayoutCellIdentifier forIndexPath:indexPath];
         return cell;
-    }else{
+    }else if(indexPath.section == 3){
         HotelInfoCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelInfoCommentCellIdentifier forIndexPath:indexPath];
+        [cell loadCellData:@"1"];
+        return cell;
+    }else{
+        HotelListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotelListCellIdentifier forIndexPath:indexPath];
         [cell loadCellData:@"1"];
         return cell;
     }
@@ -160,8 +168,11 @@ static  NSString *HotelInfoCommentCellIdentifier      = @"HotelInfoCommentCellId
          return CGSizeMake(kItemViewHeight, kItemViewWidth);
     }else if(indexPath.section == 0){
         return CGSizeMake(IPHONE_SCREEN_WIDTH, 230);
-    }else{
+    }else if(indexPath.section == 3){
         return CGSizeMake(IPHONE_SCREEN_WIDTH, 169);
+    }else{
+        return CGSizeMake(IPHONE_SCREEN_WIDTH, 90);
+
     }
 }
 

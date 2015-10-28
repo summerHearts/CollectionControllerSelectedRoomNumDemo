@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceHanSansCN-Regular.otf">
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+            <string>SourceHanSansCN-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelListCellIdentifier" rowHeight="140" id="0n8-oJ-uEY" customClass="HotelListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0n8-oJ-uEY" id="5H1-2y-UDN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="su9-dW-o61">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="89"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="Nrn-j3-kdu"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPz-Vf-fzm" customClass="HotelStarView">
+                        <rect key="frame" x="103" y="29" width="65" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="j3i-Yc-NzR"/>
+                            <constraint firstAttribute="height" constant="20" id="uKu-oV-BNQ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsz-pX-tDA">
+                        <rect key="frame" x="180" y="32" width="30" height="14"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-XB-rJn">
+                        <rect key="frame" x="267" y="12" width="32" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-mt-ZBA">
+                        <rect key="frame" x="301" y="16" width="12" height="14"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门市价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gr-Re-kbw">
+                        <rect key="frame" x="250" y="35" width="33" height="13"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="11"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHF-bU-bmY">
+                        <rect key="frame" x="286" y="35" width="27" height="13"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="11"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkW-i7-ErF">
+                        <rect key="frame" x="103" y="69" width="30" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mPa-wm-VyF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAy-bb-iPB">
+                        <rect key="frame" x="103" y="49" width="30" height="18"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="vF6-kB-n20"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="12"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fanxian" translatesAutoresizingMaskIntoConstraints="NO" id="o8j-Jw-i9t">
+                        <rect key="frame" x="149" y="12" width="15" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="oNG-1y-MzZ"/>
+                            <constraint firstAttribute="height" constant="15" id="q6c-f8-CoO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelcellpromo" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-4D-JuU">
+                        <rect key="frame" x="253" y="58" width="60" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="XAc-Jh-XFh"/>
+                            <constraint firstAttribute="width" constant="60" id="bEU-Ex-oRh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md7-kU-IH7">
+                        <rect key="frame" x="255" y="17" width="12" height="15"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-2b-qIx">
+                        <rect key="frame" x="103" y="10" width="40" height="19"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="SourceHanSansCN-Regular" family="Source Han Sans CN" pointSize="16"/>
+                        <color key="textColor" red="0.27843137254901962" green="0.29019607843137257" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelcellsaleout" translatesAutoresizingMaskIntoConstraints="NO" id="65m-ot-Cbh">
+                        <rect key="frame" x="227" y="11" width="85" height="68"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="jCd-2b-qIx" firstAttribute="leading" secondItem="IPz-Vf-fzm" secondAttribute="leading" id="1Tv-3Z-YoF"/>
+                    <constraint firstItem="md7-kU-IH7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o8j-Jw-i9t" secondAttribute="trailing" constant="2" id="5o7-6M-eNa"/>
+                    <constraint firstItem="dkW-i7-ErF" firstAttribute="top" secondItem="WAy-bb-iPB" secondAttribute="bottom" constant="2" id="71l-r1-9rd"/>
+                    <constraint firstItem="WAy-bb-iPB" firstAttribute="leading" secondItem="IPz-Vf-fzm" secondAttribute="leading" id="Cav-M0-6E2"/>
+                    <constraint firstItem="jCd-2b-qIx" firstAttribute="leading" secondItem="su9-dW-o61" secondAttribute="trailing" constant="10" id="ESU-Fb-Wrd"/>
+                    <constraint firstItem="5Gr-Re-kbw" firstAttribute="centerY" secondItem="AHF-bU-bmY" secondAttribute="centerY" id="Fad-Hj-9lW"/>
+                    <constraint firstItem="Cg7-XB-rJn" firstAttribute="leading" secondItem="md7-kU-IH7" secondAttribute="trailing" id="G9A-4t-BpZ"/>
+                    <constraint firstItem="AHF-bU-bmY" firstAttribute="leading" secondItem="5Gr-Re-kbw" secondAttribute="trailing" constant="2.5" id="JZW-yW-XPz"/>
+                    <constraint firstItem="65m-ot-Cbh" firstAttribute="centerY" secondItem="5H1-2y-UDN" secondAttribute="centerY" id="KDN-t6-g4g"/>
+                    <constraint firstItem="Lsz-pX-tDA" firstAttribute="centerY" secondItem="IPz-Vf-fzm" secondAttribute="centerY" id="KHB-NV-HGm"/>
+                    <constraint firstAttribute="trailing" secondItem="9b3-mt-ZBA" secondAttribute="trailing" constant="7" id="Kac-gg-OFY"/>
+                    <constraint firstAttribute="trailing" secondItem="65m-ot-Cbh" secondAttribute="trailing" constant="8" id="LHp-pB-fNE"/>
+                    <constraint firstItem="AHF-bU-bmY" firstAttribute="top" secondItem="9b3-mt-ZBA" secondAttribute="bottom" constant="5" id="NVp-m8-Jc4"/>
+                    <constraint firstItem="AHF-bU-bmY" firstAttribute="trailing" secondItem="9b3-mt-ZBA" secondAttribute="trailing" id="Oty-Z4-Rhb"/>
+                    <constraint firstAttribute="bottom" secondItem="Xsr-4D-JuU" secondAttribute="bottom" constant="14" id="PHx-s6-mVN"/>
+                    <constraint firstItem="o8j-Jw-i9t" firstAttribute="leading" secondItem="jCd-2b-qIx" secondAttribute="trailing" constant="6" id="SvM-an-sE0"/>
+                    <constraint firstItem="jCd-2b-qIx" firstAttribute="top" secondItem="5H1-2y-UDN" secondAttribute="top" constant="10" id="Tkt-68-3LF"/>
+                    <constraint firstItem="md7-kU-IH7" firstAttribute="bottom" secondItem="Cg7-XB-rJn" secondAttribute="bottom" id="VYF-MX-iHJ"/>
+                    <constraint firstItem="IPz-Vf-fzm" firstAttribute="top" secondItem="jCd-2b-qIx" secondAttribute="bottom" id="VZd-j2-aWC"/>
+                    <constraint firstItem="su9-dW-o61" firstAttribute="leading" secondItem="5H1-2y-UDN" secondAttribute="leading" id="VyJ-nB-1q5"/>
+                    <constraint firstItem="dkW-i7-ErF" firstAttribute="leading" secondItem="WAy-bb-iPB" secondAttribute="leading" id="ZMr-Ag-bon"/>
+                    <constraint firstItem="jCd-2b-qIx" firstAttribute="centerY" secondItem="o8j-Jw-i9t" secondAttribute="centerY" id="jMQ-4t-jTa"/>
+                    <constraint firstAttribute="bottom" secondItem="su9-dW-o61" secondAttribute="bottom" id="lPj-9I-z0W"/>
+                    <constraint firstItem="9b3-mt-ZBA" firstAttribute="leading" secondItem="Cg7-XB-rJn" secondAttribute="trailing" constant="2" id="nBT-Zd-fKX"/>
+                    <constraint firstItem="WAy-bb-iPB" firstAttribute="top" secondItem="IPz-Vf-fzm" secondAttribute="bottom" id="njb-qn-poo"/>
+                    <constraint firstItem="Xsr-4D-JuU" firstAttribute="trailing" secondItem="AHF-bU-bmY" secondAttribute="trailing" id="pVq-zp-Oob"/>
+                    <constraint firstItem="su9-dW-o61" firstAttribute="top" secondItem="5H1-2y-UDN" secondAttribute="top" id="rVY-6f-rGU"/>
+                    <constraint firstItem="Lsz-pX-tDA" firstAttribute="leading" secondItem="IPz-Vf-fzm" secondAttribute="trailing" constant="12" id="s4O-ZS-r7m"/>
+                    <constraint firstItem="Cg7-XB-rJn" firstAttribute="bottom" secondItem="9b3-mt-ZBA" secondAttribute="bottom" constant="2" id="ve6-P0-A9I"/>
+                    <constraint firstItem="9b3-mt-ZBA" firstAttribute="top" secondItem="5H1-2y-UDN" secondAttribute="top" constant="16" id="xxZ-Os-Igr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="hotelCashBackImageView" destination="o8j-Jw-i9t" id="u52-Ra-Kxv"/>
+                <outlet property="hotelCityLabel" destination="dkW-i7-ErF" id="nl8-Ne-EGQ"/>
+                <outlet property="hotelImageView" destination="su9-dW-o61" id="eko-dO-vhL"/>
+                <outlet property="hotelMonthSaleLabel" destination="Lsz-pX-tDA" id="BXf-Xa-sVk"/>
+                <outlet property="hotelNameLabel" destination="jCd-2b-qIx" id="pkW-Fr-nrc"/>
+                <outlet property="hotelPMSPriceLabel" destination="AHF-bU-bmY" id="ZfS-KA-g3g"/>
+                <outlet property="hotelPriceLabel" destination="Cg7-XB-rJn" id="Ppx-3g-TC9"/>
+                <outlet property="hotelRoomCountLabel" destination="WAy-bb-iPB" id="ksn-tY-YNx"/>
+                <outlet property="hotelStarView" destination="IPz-Vf-fzm" id="7US-Yt-Ulj"/>
+                <outlet property="promoImageView" destination="Xsr-4D-JuU" id="e6d-Ec-WBa"/>
+                <outlet property="saleoutImageView" destination="65m-ot-Cbh" id="cQZ-8t-kUl"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="99"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fanxian" width="15" height="15"/>
+        <image name="hotelcellpromo" width="50" height="13"/>
+        <image name="hotelcellsaleout" width="85" height="68"/>
+    </resources>
+</document>
