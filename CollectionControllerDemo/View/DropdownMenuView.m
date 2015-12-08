@@ -7,7 +7,7 @@
 //
 
 #import "DropdownMenuView.h"
-#import "Masonry/Masonry.h"
+#import "Masonry.h"
 
 static const CGFloat DropdownMenuViewHeaderHeight = 300;
 

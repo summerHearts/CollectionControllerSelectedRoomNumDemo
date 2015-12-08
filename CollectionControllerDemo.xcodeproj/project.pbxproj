@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230382A01BE06514008F4E42 /* HotelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2303829E1BE06514008F4E42 /* HotelListCell.m */; };
-		230382A11BE06514008F4E42 /* HotelListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2303829F1BE06514008F4E42 /* HotelListCell.xib */; };
-		230382A41BE06566008F4E42 /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382A21BE06566008F4E42 /* HotelCell.m */; };
 		230382A61BE073D4008F4E42 /* qunale.json in Resources */ = {isa = PBXBuildFile; fileRef = 230382A51BE073D4008F4E42 /* qunale.json */; };
 		230382AB1BE07444008F4E42 /* HotelDetailRoomStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382A91BE07444008F4E42 /* HotelDetailRoomStatusModel.m */; };
 		230382C81BE0748C008F4E42 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382B01BE0748C008F4E42 /* MJDictionaryCache.m */; };
@@ -45,7 +42,6 @@
 		2303831C1BE0AC36008F4E42 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2303830B1BE0AC36008F4E42 /* UIImageView+WebCache.m */; };
 		2303831D1BE0AC36008F4E42 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2303830D1BE0AC36008F4E42 /* UIView+WebCacheOperation.m */; };
 		230383201BE0AD64008F4E42 /* HotelDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2303831F1BE0AD64008F4E42 /* HotelDetailInfoModel.m */; };
-		231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D21BDFDE1300897E42 /* DropdownMenuView.m */; };
 		231277EE1BDFDE9300897E42 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */; };
 		231277EF1BDFDE9300897E42 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277D91BDFDE9300897E42 /* MASConstraint.m */; };
 		231277F01BDFDE9300897E42 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277DB1BDFDE9300897E42 /* MASConstraintMaker.m */; };
@@ -56,37 +52,40 @@
 		231277F51BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277E81BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		231277F61BDFDE9300897E42 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277EA1BDFDE9300897E42 /* View+MASAdditions.m */; };
 		231277F71BDFDE9300897E42 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231277ED1BDFDE9300897E42 /* ViewController+MASAdditions.m */; };
-		2382C3171BDF9C0900875752 /* HotelInfoCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */; };
-		2382C3181BDF9C0900875752 /* HotelInfoCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */; };
+		235672F31C044EA800F178E4 /* HotelRoomTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672EF1C044EA800F178E4 /* HotelRoomTypeController.m */; };
+		235672F41C044EA800F178E4 /* HotelRoomTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235672F01C044EA800F178E4 /* HotelRoomTypeController.xib */; };
+		235672F51C044EA800F178E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672F21C044EA800F178E4 /* ViewController.m */; };
+		2356730F1C044EDD00F178E4 /* DropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672F71C044EDD00F178E4 /* DropdownMenuView.m */; };
+		235673101C044EDD00F178E4 /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672F91C044EDD00F178E4 /* HotelCell.m */; };
+		235673111C044EDD00F178E4 /* HotelCommentIInfosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672FB1C044EDD00F178E4 /* HotelCommentIInfosCell.m */; };
+		235673121C044EDD00F178E4 /* HotelCommentIInfosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235672FC1C044EDD00F178E4 /* HotelCommentIInfosCell.xib */; };
+		235673131C044EDD00F178E4 /* HotelDetailAutoLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235672FE1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.m */; };
+		235673141C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235672FF1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib */; };
+		235673151C044EDD00F178E4 /* HotelDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235673011C044EDD00F178E4 /* HotelDetailInfoCell.m */; };
+		235673161C044EDD00F178E4 /* HotelDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235673021C044EDD00F178E4 /* HotelDetailInfoCell.xib */; };
+		235673171C044EDD00F178E4 /* HotelInfoCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235673041C044EDD00F178E4 /* HotelInfoCommentCell.m */; };
+		235673181C044EDD00F178E4 /* HotelInfoCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235673051C044EDD00F178E4 /* HotelInfoCommentCell.xib */; };
+		235673191C044EDD00F178E4 /* HotelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235673071C044EDD00F178E4 /* HotelListCell.m */; };
+		2356731A1C044EDD00F178E4 /* HotelListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235673081C044EDD00F178E4 /* HotelListCell.xib */; };
+		2356731B1C044EDD00F178E4 /* HotelRoomTypeFillterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356730A1C044EDD00F178E4 /* HotelRoomTypeFillterView.m */; };
+		2356731C1C044EDD00F178E4 /* HotelRoomTypeFillterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2356730B1C044EDD00F178E4 /* HotelRoomTypeFillterView.xib */; };
+		2356731D1C044EDD00F178E4 /* HotelRoomTypeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356730D1C044EDD00F178E4 /* HotelRoomTypeFooterView.m */; };
+		2356731E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2356730E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib */; };
+		235673271C04521400F178E4 /* PhotoLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235673251C04521400F178E4 /* PhotoLibraryController.m */; };
+		235673281C04521400F178E4 /* PhotoLibraryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235673261C04521400F178E4 /* PhotoLibraryController.xib */; };
+		235673301C04644F00F178E4 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356732F1C04644F00F178E4 /* StarView.m */; };
+		235673351C0472FA00F178E4 /* TagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 235673341C0472FA00F178E4 /* TagBtn.m */; };
 		23A5231C1BDF537800B0AC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5231B1BDF537800B0AC98 /* main.m */; };
 		23A5231F1BDF537800B0AC98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5231E1BDF537800B0AC98 /* AppDelegate.m */; };
-		23A523221BDF537800B0AC98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523211BDF537800B0AC98 /* ViewController.m */; };
 		23A523251BDF537800B0AC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A523231BDF537800B0AC98 /* Main.storyboard */; };
 		23A523281BDF537800B0AC98 /* CollectionControllerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23A523261BDF537800B0AC98 /* CollectionControllerDemo.xcdatamodeld */; };
 		23A5232A1BDF537800B0AC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A523291BDF537800B0AC98 /* Assets.xcassets */; };
 		23A5232D1BDF537800B0AC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A5232B1BDF537800B0AC98 /* LaunchScreen.storyboard */; };
-		23A523371BDF541600B0AC98 /* HotelRoomTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523351BDF541600B0AC98 /* HotelRoomTypeController.m */; };
-		23A523381BDF541600B0AC98 /* HotelRoomTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A523361BDF541600B0AC98 /* HotelRoomTypeController.xib */; };
-		23A523451BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5233D1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m */; };
-		23A523461BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5233E1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.xib */; };
-		23A523471BDF644C00B0AC98 /* HotelRoomTypeFillterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523401BDF644C00B0AC98 /* HotelRoomTypeFillterView.m */; };
-		23A523481BDF644C00B0AC98 /* HotelRoomTypeFillterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A523411BDF644C00B0AC98 /* HotelRoomTypeFillterView.xib */; };
-		23A523491BDF644C00B0AC98 /* HotelRoomTypeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523431BDF644C00B0AC98 /* HotelRoomTypeFooterView.m */; };
-		23A5234A1BDF644C00B0AC98 /* HotelRoomTypeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A523441BDF644C00B0AC98 /* HotelRoomTypeFooterView.xib */; };
-		23A5234E1BDF66C200B0AC98 /* HotelDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5234C1BDF66C200B0AC98 /* HotelDetailInfoCell.m */; };
-		23A5234F1BDF66C200B0AC98 /* HotelDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5234D1BDF66C200B0AC98 /* HotelDetailInfoCell.xib */; };
 		23A5235A1BDF72FA00B0AC98 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A523591BDF72FA00B0AC98 /* title.png */; };
-		23A5237B1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A523791BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m */; };
-		23A5237C1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5237A1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib */; };
 		23A523801BDF8BDE00B0AC98 /* HotelStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2303829D1BE06514008F4E42 /* HotelListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelListCell.h; path = ../HotelListCell.h; sourceTree = "<group>"; };
-		2303829E1BE06514008F4E42 /* HotelListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelListCell.m; path = ../HotelListCell.m; sourceTree = "<group>"; };
-		2303829F1BE06514008F4E42 /* HotelListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelListCell.xib; path = ../HotelListCell.xib; sourceTree = "<group>"; };
-		230382A21BE06566008F4E42 /* HotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelCell.m; path = ../HotelCell.m; sourceTree = "<group>"; };
-		230382A31BE06566008F4E42 /* HotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelCell.h; path = ../HotelCell.h; sourceTree = "<group>"; };
 		230382A51BE073D4008F4E42 /* qunale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qunale.json; sourceTree = "<group>"; };
 		230382A81BE07444008F4E42 /* HotelDetailRoomStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelDetailRoomStatusModel.h; path = ../HotelDetailRoomStatusModel.h; sourceTree = "<group>"; };
 		230382A91BE07444008F4E42 /* HotelDetailRoomStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelDetailRoomStatusModel.m; path = ../HotelDetailRoomStatusModel.m; sourceTree = "<group>"; };
@@ -158,8 +157,6 @@
 		2303830D1BE0AC36008F4E42 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		2303831E1BE0AD64008F4E42 /* HotelDetailInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailInfoModel.h; sourceTree = "<group>"; };
 		2303831F1BE0AD64008F4E42 /* HotelDetailInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailInfoModel.m; sourceTree = "<group>"; };
-		231277D11BDFDE1300897E42 /* DropdownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropdownMenuView.h; path = ../DropdownMenuView.h; sourceTree = "<group>"; };
-		231277D21BDFDE1300897E42 /* DropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DropdownMenuView.m; path = ../DropdownMenuView.m; sourceTree = "<group>"; };
 		231277D51BDFDE9300897E42 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		231277D61BDFDE9300897E42 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		231277D71BDFDE9300897E42 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -185,39 +182,53 @@
 		231277EB1BDFDE9300897E42 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		231277EC1BDFDE9300897E42 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		231277ED1BDFDE9300897E42 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		2382C3141BDF9C0900875752 /* HotelInfoCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelInfoCommentCell.h; path = ../HotelInfoCommentCell.h; sourceTree = "<group>"; };
-		2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelInfoCommentCell.m; path = ../HotelInfoCommentCell.m; sourceTree = "<group>"; };
-		2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelInfoCommentCell.xib; path = ../HotelInfoCommentCell.xib; sourceTree = "<group>"; };
+		235672EE1C044EA800F178E4 /* HotelRoomTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRoomTypeController.h; sourceTree = "<group>"; };
+		235672EF1C044EA800F178E4 /* HotelRoomTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRoomTypeController.m; sourceTree = "<group>"; };
+		235672F01C044EA800F178E4 /* HotelRoomTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRoomTypeController.xib; sourceTree = "<group>"; };
+		235672F11C044EA800F178E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		235672F21C044EA800F178E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		235672F61C044EDD00F178E4 /* DropdownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropdownMenuView.h; sourceTree = "<group>"; };
+		235672F71C044EDD00F178E4 /* DropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuView.m; sourceTree = "<group>"; };
+		235672F81C044EDD00F178E4 /* HotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelCell.h; sourceTree = "<group>"; };
+		235672F91C044EDD00F178E4 /* HotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelCell.m; sourceTree = "<group>"; };
+		235672FA1C044EDD00F178E4 /* HotelCommentIInfosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelCommentIInfosCell.h; sourceTree = "<group>"; };
+		235672FB1C044EDD00F178E4 /* HotelCommentIInfosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelCommentIInfosCell.m; sourceTree = "<group>"; };
+		235672FC1C044EDD00F178E4 /* HotelCommentIInfosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelCommentIInfosCell.xib; sourceTree = "<group>"; };
+		235672FD1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailAutoLayoutCell.h; sourceTree = "<group>"; };
+		235672FE1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailAutoLayoutCell.m; sourceTree = "<group>"; };
+		235672FF1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelDetailAutoLayoutCell.xib; sourceTree = "<group>"; };
+		235673001C044EDD00F178E4 /* HotelDetailInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailInfoCell.h; sourceTree = "<group>"; };
+		235673011C044EDD00F178E4 /* HotelDetailInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailInfoCell.m; sourceTree = "<group>"; };
+		235673021C044EDD00F178E4 /* HotelDetailInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelDetailInfoCell.xib; sourceTree = "<group>"; };
+		235673031C044EDD00F178E4 /* HotelInfoCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelInfoCommentCell.h; sourceTree = "<group>"; };
+		235673041C044EDD00F178E4 /* HotelInfoCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelInfoCommentCell.m; sourceTree = "<group>"; };
+		235673051C044EDD00F178E4 /* HotelInfoCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelInfoCommentCell.xib; sourceTree = "<group>"; };
+		235673061C044EDD00F178E4 /* HotelListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelListCell.h; sourceTree = "<group>"; };
+		235673071C044EDD00F178E4 /* HotelListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelListCell.m; sourceTree = "<group>"; };
+		235673081C044EDD00F178E4 /* HotelListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelListCell.xib; sourceTree = "<group>"; };
+		235673091C044EDD00F178E4 /* HotelRoomTypeFillterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRoomTypeFillterView.h; sourceTree = "<group>"; };
+		2356730A1C044EDD00F178E4 /* HotelRoomTypeFillterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRoomTypeFillterView.m; sourceTree = "<group>"; };
+		2356730B1C044EDD00F178E4 /* HotelRoomTypeFillterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRoomTypeFillterView.xib; sourceTree = "<group>"; };
+		2356730C1C044EDD00F178E4 /* HotelRoomTypeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRoomTypeFooterView.h; sourceTree = "<group>"; };
+		2356730D1C044EDD00F178E4 /* HotelRoomTypeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRoomTypeFooterView.m; sourceTree = "<group>"; };
+		2356730E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRoomTypeFooterView.xib; sourceTree = "<group>"; };
+		235673241C04521400F178E4 /* PhotoLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryController.h; sourceTree = "<group>"; };
+		235673251C04521400F178E4 /* PhotoLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryController.m; sourceTree = "<group>"; };
+		235673261C04521400F178E4 /* PhotoLibraryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoLibraryController.xib; sourceTree = "<group>"; };
+		2356732E1C04644F00F178E4 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		2356732F1C04644F00F178E4 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		235673331C0472FA00F178E4 /* TagBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagBtn.h; sourceTree = "<group>"; };
+		235673341C0472FA00F178E4 /* TagBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagBtn.m; sourceTree = "<group>"; };
 		23A523171BDF537800B0AC98 /* CollectionControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A5231B1BDF537800B0AC98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23A5231D1BDF537800B0AC98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23A5231E1BDF537800B0AC98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		23A523201BDF537800B0AC98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		23A523211BDF537800B0AC98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		23A523241BDF537800B0AC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23A523271BDF537800B0AC98 /* CollectionControllerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionControllerDemo.xcdatamodel; sourceTree = "<group>"; };
 		23A523291BDF537800B0AC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A5232C1BDF537800B0AC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A5232E1BDF537800B0AC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23A523341BDF541600B0AC98 /* HotelRoomTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelRoomTypeController.h; path = ../HotelRoomTypeController.h; sourceTree = "<group>"; };
-		23A523351BDF541600B0AC98 /* HotelRoomTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelRoomTypeController.m; path = ../HotelRoomTypeController.m; sourceTree = "<group>"; };
-		23A523361BDF541600B0AC98 /* HotelRoomTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelRoomTypeController.xib; path = ../HotelRoomTypeController.xib; sourceTree = "<group>"; };
-		23A5233C1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelDetailAutoLayoutCell.h; path = ../HotelDetailAutoLayoutCell.h; sourceTree = "<group>"; };
-		23A5233D1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelDetailAutoLayoutCell.m; path = ../HotelDetailAutoLayoutCell.m; sourceTree = "<group>"; };
-		23A5233E1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelDetailAutoLayoutCell.xib; path = ../HotelDetailAutoLayoutCell.xib; sourceTree = "<group>"; };
-		23A5233F1BDF644C00B0AC98 /* HotelRoomTypeFillterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelRoomTypeFillterView.h; path = ../HotelRoomTypeFillterView.h; sourceTree = "<group>"; };
-		23A523401BDF644C00B0AC98 /* HotelRoomTypeFillterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelRoomTypeFillterView.m; path = ../HotelRoomTypeFillterView.m; sourceTree = "<group>"; };
-		23A523411BDF644C00B0AC98 /* HotelRoomTypeFillterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelRoomTypeFillterView.xib; path = ../HotelRoomTypeFillterView.xib; sourceTree = "<group>"; };
-		23A523421BDF644C00B0AC98 /* HotelRoomTypeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelRoomTypeFooterView.h; path = ../HotelRoomTypeFooterView.h; sourceTree = "<group>"; };
-		23A523431BDF644C00B0AC98 /* HotelRoomTypeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelRoomTypeFooterView.m; path = ../HotelRoomTypeFooterView.m; sourceTree = "<group>"; };
-		23A523441BDF644C00B0AC98 /* HotelRoomTypeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelRoomTypeFooterView.xib; path = ../HotelRoomTypeFooterView.xib; sourceTree = "<group>"; };
-		23A5234B1BDF66C200B0AC98 /* HotelDetailInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelDetailInfoCell.h; path = ../HotelDetailInfoCell.h; sourceTree = "<group>"; };
-		23A5234C1BDF66C200B0AC98 /* HotelDetailInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelDetailInfoCell.m; path = ../HotelDetailInfoCell.m; sourceTree = "<group>"; };
-		23A5234D1BDF66C200B0AC98 /* HotelDetailInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelDetailInfoCell.xib; path = ../HotelDetailInfoCell.xib; sourceTree = "<group>"; };
 		23A523591BDF72FA00B0AC98 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
-		23A523781BDF7C7B00B0AC98 /* HotelCommentIInfosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelCommentIInfosCell.h; path = ../HotelCommentIInfosCell.h; sourceTree = "<group>"; };
-		23A523791BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelCommentIInfosCell.m; path = ../HotelCommentIInfosCell.m; sourceTree = "<group>"; };
-		23A5237A1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotelCommentIInfosCell.xib; path = ../HotelCommentIInfosCell.xib; sourceTree = "<group>"; };
 		23A5237E1BDF8BDE00B0AC98 /* HotelStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelStarView.h; path = ../HotelStarView.h; sourceTree = "<group>"; };
 		23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelStarView.m; path = ../HotelStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,18 +275,6 @@
 			path = ../MJExtension/MJExtension;
 			sourceTree = "<group>";
 		};
-		230382D81BE09228008F4E42 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				23A523201BDF537800B0AC98 /* ViewController.h */,
-				23A523211BDF537800B0AC98 /* ViewController.m */,
-				23A523341BDF541600B0AC98 /* HotelRoomTypeController.h */,
-				23A523351BDF541600B0AC98 /* HotelRoomTypeController.m */,
-				23A523361BDF541600B0AC98 /* HotelRoomTypeController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
 		230382D91BE09228008F4E42 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,45 +296,17 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		230382DA1BE09228008F4E42 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				231277D11BDFDE1300897E42 /* DropdownMenuView.h */,
-				231277D21BDFDE1300897E42 /* DropdownMenuView.m */,
-				230382A31BE06566008F4E42 /* HotelCell.h */,
-				230382A21BE06566008F4E42 /* HotelCell.m */,
-				23A5233C1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.h */,
-				23A5233D1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m */,
-				23A5233E1BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.xib */,
-				23A5234B1BDF66C200B0AC98 /* HotelDetailInfoCell.h */,
-				23A5234C1BDF66C200B0AC98 /* HotelDetailInfoCell.m */,
-				23A5234D1BDF66C200B0AC98 /* HotelDetailInfoCell.xib */,
-				23A523781BDF7C7B00B0AC98 /* HotelCommentIInfosCell.h */,
-				23A523791BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m */,
-				23A5237A1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib */,
-				23A5233F1BDF644C00B0AC98 /* HotelRoomTypeFillterView.h */,
-				23A523401BDF644C00B0AC98 /* HotelRoomTypeFillterView.m */,
-				23A523411BDF644C00B0AC98 /* HotelRoomTypeFillterView.xib */,
-				23A523421BDF644C00B0AC98 /* HotelRoomTypeFooterView.h */,
-				23A523431BDF644C00B0AC98 /* HotelRoomTypeFooterView.m */,
-				23A523441BDF644C00B0AC98 /* HotelRoomTypeFooterView.xib */,
-				2382C3141BDF9C0900875752 /* HotelInfoCommentCell.h */,
-				2382C3151BDF9C0900875752 /* HotelInfoCommentCell.m */,
-				2382C3161BDF9C0900875752 /* HotelInfoCommentCell.xib */,
-				2303829D1BE06514008F4E42 /* HotelListCell.h */,
-				2303829E1BE06514008F4E42 /* HotelListCell.m */,
-				2303829F1BE06514008F4E42 /* HotelListCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		230382DB1BE09289008F4E42 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				2356732E1C04644F00F178E4 /* StarView.h */,
+				2356732F1C04644F00F178E4 /* StarView.m */,
 				23A5237E1BDF8BDE00B0AC98 /* HotelStarView.h */,
 				23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */,
 				230382D41BE07DA9008F4E42 /* UIColor+Hex.h */,
 				230382D51BE07DA9008F4E42 /* UIColor+Hex.m */,
+				235673331C0472FA00F178E4 /* TagBtn.h */,
+				235673341C0472FA00F178E4 /* TagBtn.m */,
 				230382F01BE0AC36008F4E42 /* SDWebImage */,
 				230382AE1BE0748C008F4E42 /* MJExtension */,
 				231277D41BDFDE9300897E42 /* Masonry */,
@@ -413,6 +384,53 @@
 			path = ../Masonry;
 			sourceTree = "<group>";
 		};
+		235672EC1C044E7500F178E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				235672EE1C044EA800F178E4 /* HotelRoomTypeController.h */,
+				235672EF1C044EA800F178E4 /* HotelRoomTypeController.m */,
+				235672F01C044EA800F178E4 /* HotelRoomTypeController.xib */,
+				235672F11C044EA800F178E4 /* ViewController.h */,
+				235672F21C044EA800F178E4 /* ViewController.m */,
+				235673241C04521400F178E4 /* PhotoLibraryController.h */,
+				235673251C04521400F178E4 /* PhotoLibraryController.m */,
+				235673261C04521400F178E4 /* PhotoLibraryController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		235672ED1C044E7E00F178E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				235672F61C044EDD00F178E4 /* DropdownMenuView.h */,
+				235672F71C044EDD00F178E4 /* DropdownMenuView.m */,
+				235672F81C044EDD00F178E4 /* HotelCell.h */,
+				235672F91C044EDD00F178E4 /* HotelCell.m */,
+				235672FA1C044EDD00F178E4 /* HotelCommentIInfosCell.h */,
+				235672FB1C044EDD00F178E4 /* HotelCommentIInfosCell.m */,
+				235672FC1C044EDD00F178E4 /* HotelCommentIInfosCell.xib */,
+				235672FD1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.h */,
+				235672FE1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.m */,
+				235672FF1C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib */,
+				235673001C044EDD00F178E4 /* HotelDetailInfoCell.h */,
+				235673011C044EDD00F178E4 /* HotelDetailInfoCell.m */,
+				235673021C044EDD00F178E4 /* HotelDetailInfoCell.xib */,
+				235673031C044EDD00F178E4 /* HotelInfoCommentCell.h */,
+				235673041C044EDD00F178E4 /* HotelInfoCommentCell.m */,
+				235673051C044EDD00F178E4 /* HotelInfoCommentCell.xib */,
+				235673061C044EDD00F178E4 /* HotelListCell.h */,
+				235673071C044EDD00F178E4 /* HotelListCell.m */,
+				235673081C044EDD00F178E4 /* HotelListCell.xib */,
+				235673091C044EDD00F178E4 /* HotelRoomTypeFillterView.h */,
+				2356730A1C044EDD00F178E4 /* HotelRoomTypeFillterView.m */,
+				2356730B1C044EDD00F178E4 /* HotelRoomTypeFillterView.xib */,
+				2356730C1C044EDD00F178E4 /* HotelRoomTypeFooterView.h */,
+				2356730D1C044EDD00F178E4 /* HotelRoomTypeFooterView.m */,
+				2356730E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		23A5230E1BDF537800B0AC98 = {
 			isa = PBXGroup;
 			children = (
@@ -432,10 +450,10 @@
 		23A523191BDF537800B0AC98 /* CollectionControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				230382DB1BE09289008F4E42 /* library */,
-				230382D81BE09228008F4E42 /* controller */,
 				230382D91BE09228008F4E42 /* model */,
-				230382DA1BE09228008F4E42 /* View */,
+				235672ED1C044E7E00F178E4 /* View */,
+				235672EC1C044E7500F178E4 /* Controller */,
+				230382DB1BE09289008F4E42 /* library */,
 				23A5231D1BDF537800B0AC98 /* AppDelegate.h */,
 				23A5231E1BDF537800B0AC98 /* AppDelegate.m */,
 				23A523231BDF537800B0AC98 /* Main.storyboard */,
@@ -519,18 +537,19 @@
 			files = (
 				230382DD1BE09541008F4E42 /* hotelInfo.json in Resources */,
 				23A5232D1BDF537800B0AC98 /* LaunchScreen.storyboard in Resources */,
+				235673121C044EDD00F178E4 /* HotelCommentIInfosCell.xib in Resources */,
+				2356731E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib in Resources */,
 				23A5232A1BDF537800B0AC98 /* Assets.xcassets in Resources */,
-				23A523461BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.xib in Resources */,
-				23A5234F1BDF66C200B0AC98 /* HotelDetailInfoCell.xib in Resources */,
-				23A5234A1BDF644C00B0AC98 /* HotelRoomTypeFooterView.xib in Resources */,
-				23A523481BDF644C00B0AC98 /* HotelRoomTypeFillterView.xib in Resources */,
+				235672F41C044EA800F178E4 /* HotelRoomTypeController.xib in Resources */,
 				23A523251BDF537800B0AC98 /* Main.storyboard in Resources */,
-				2382C3181BDF9C0900875752 /* HotelInfoCommentCell.xib in Resources */,
-				23A523381BDF541600B0AC98 /* HotelRoomTypeController.xib in Resources */,
-				23A5237C1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.xib in Resources */,
-				230382A11BE06514008F4E42 /* HotelListCell.xib in Resources */,
 				230382A61BE073D4008F4E42 /* qunale.json in Resources */,
+				235673281C04521400F178E4 /* PhotoLibraryController.xib in Resources */,
+				235673181C044EDD00F178E4 /* HotelInfoCommentCell.xib in Resources */,
 				23A5235A1BDF72FA00B0AC98 /* title.png in Resources */,
+				235673141C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib in Resources */,
+				2356731A1C044EDD00F178E4 /* HotelListCell.xib in Resources */,
+				2356731C1C044EDD00F178E4 /* HotelRoomTypeFillterView.xib in Resources */,
+				235673161C044EDD00F178E4 /* HotelDetailInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,48 +560,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2356730F1C044EDD00F178E4 /* DropdownMenuView.m in Sources */,
+				2356731D1C044EDD00F178E4 /* HotelRoomTypeFooterView.m in Sources */,
 				230383191BE0AC36008F4E42 /* UIImage+GIF.m in Sources */,
 				230382CF1BE0748C008F4E42 /* NSObject+MJCoding.m in Sources */,
 				230382D61BE07DA9008F4E42 /* UIColor+Hex.m in Sources */,
-				23A523221BDF537800B0AC98 /* ViewController.m in Sources */,
 				230383161BE0AC36008F4E42 /* SDWebImageManager.m in Sources */,
-				23A523491BDF644C00B0AC98 /* HotelRoomTypeFooterView.m in Sources */,
 				230382D01BE0748C008F4E42 /* NSObject+MJKeyValue.m in Sources */,
 				230382AB1BE07444008F4E42 /* HotelDetailRoomStatusModel.m in Sources */,
 				231277F51BDFDE9300897E42 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				230382D21BE0748C008F4E42 /* NSString+MJExtension.m in Sources */,
 				23A523801BDF8BDE00B0AC98 /* HotelStarView.m in Sources */,
+				235672F31C044EA800F178E4 /* HotelRoomTypeController.m in Sources */,
 				231277F31BDFDE9300897E42 /* MASViewConstraint.m in Sources */,
 				230382CE1BE0748C008F4E42 /* NSObject+MJClass.m in Sources */,
-				23A5237B1BDF7C7B00B0AC98 /* HotelCommentIInfosCell.m in Sources */,
 				231277F61BDFDE9300897E42 /* View+MASAdditions.m in Sources */,
 				230383201BE0AD64008F4E42 /* HotelDetailInfoModel.m in Sources */,
+				235673351C0472FA00F178E4 /* TagBtn.m in Sources */,
 				230382C81BE0748C008F4E42 /* MJDictionaryCache.m in Sources */,
 				230382CD1BE0748C008F4E42 /* MJPropertyType.m in Sources */,
-				231277D31BDFDE1300897E42 /* DropdownMenuView.m in Sources */,
 				230382CC1BE0748C008F4E42 /* MJPropertyKey.m in Sources */,
+				235673111C044EDD00F178E4 /* HotelCommentIInfosCell.m in Sources */,
 				231277F21BDFDE9300897E42 /* MASViewAttribute.m in Sources */,
 				231277F01BDFDE9300897E42 /* MASConstraintMaker.m in Sources */,
-				230382A01BE06514008F4E42 /* HotelListCell.m in Sources */,
 				230382CB1BE0748C008F4E42 /* MJProperty.m in Sources */,
+				235673171C044EDD00F178E4 /* HotelInfoCommentCell.m in Sources */,
 				230382D11BE0748C008F4E42 /* NSObject+MJProperty.m in Sources */,
 				230382EC1BE0AB81008F4E42 /* TicketsModel.m in Sources */,
 				230383181BE0AC36008F4E42 /* UIButton+WebCache.m in Sources */,
+				235673191C044EDD00F178E4 /* HotelListCell.m in Sources */,
+				235673271C04521400F178E4 /* PhotoLibraryController.m in Sources */,
 				2303831B1BE0AC36008F4E42 /* UIImageView+HighlightedWebCache.m in Sources */,
-				2382C3171BDF9C0900875752 /* HotelInfoCommentCell.m in Sources */,
-				230382A41BE06566008F4E42 /* HotelCell.m in Sources */,
 				2303831C1BE0AC36008F4E42 /* UIImageView+WebCache.m in Sources */,
+				235672F51C044EA800F178E4 /* ViewController.m in Sources */,
 				230383111BE0AC36008F4E42 /* SDImageCache.m in Sources */,
 				230383121BE0AC36008F4E42 /* SDWebImageCompat.m in Sources */,
 				23A5231F1BDF537800B0AC98 /* AppDelegate.m in Sources */,
+				235673101C044EDD00F178E4 /* HotelCell.m in Sources */,
 				230383171BE0AC36008F4E42 /* SDWebImagePrefetcher.m in Sources */,
 				2303831A1BE0AC36008F4E42 /* UIImage+MultiFormat.m in Sources */,
+				235673301C04644F00F178E4 /* StarView.m in Sources */,
 				230383131BE0AC36008F4E42 /* SDWebImageDecoder.m in Sources */,
+				235673131C044EDD00F178E4 /* HotelDetailAutoLayoutCell.m in Sources */,
+				2356731B1C044EDD00F178E4 /* HotelRoomTypeFillterView.m in Sources */,
 				230382C91BE0748C008F4E42 /* MJExtensionConst.m in Sources */,
 				230382E91BE0AB12008F4E42 /* OrderListModel.m in Sources */,
-				23A523451BDF644C00B0AC98 /* HotelDetailAutoLayoutCell.m in Sources */,
 				231277F71BDFDE9300897E42 /* ViewController+MASAdditions.m in Sources */,
-				23A523371BDF541600B0AC98 /* HotelRoomTypeController.m in Sources */,
 				230382E61BE095E9008F4E42 /* PicModel.m in Sources */,
 				230382E01BE0957E008F4E42 /* HotelListModel.m in Sources */,
 				231277F41BDFDE9300897E42 /* NSArray+MASAdditions.m in Sources */,
@@ -593,12 +616,11 @@
 				23A5231C1BDF537800B0AC98 /* main.m in Sources */,
 				230382CA1BE0748C008F4E42 /* MJFoundation.m in Sources */,
 				230383101BE0AC36008F4E42 /* NSData+ImageContentType.m in Sources */,
-				23A523471BDF644C00B0AC98 /* HotelRoomTypeFillterView.m in Sources */,
-				23A5234E1BDF66C200B0AC98 /* HotelDetailInfoCell.m in Sources */,
 				230383151BE0AC36008F4E42 /* SDWebImageDownloaderOperation.m in Sources */,
 				230383141BE0AC36008F4E42 /* SDWebImageDownloader.m in Sources */,
 				2303831D1BE0AC36008F4E42 /* UIView+WebCacheOperation.m in Sources */,
 				231277EF1BDFDE9300897E42 /* MASConstraint.m in Sources */,
+				235673151C044EDD00F178E4 /* HotelDetailInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
