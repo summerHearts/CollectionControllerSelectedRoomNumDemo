@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2302E9151C57B5F900D49512 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2302E9131C57B5F900D49512 /* 1.png */; };
+		2302E9161C57B5F900D49512 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2302E9141C57B5F900D49512 /* 2.png */; };
 		230382A61BE073D4008F4E42 /* qunale.json in Resources */ = {isa = PBXBuildFile; fileRef = 230382A51BE073D4008F4E42 /* qunale.json */; };
 		230382AB1BE07444008F4E42 /* HotelDetailRoomStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382A91BE07444008F4E42 /* HotelDetailRoomStatusModel.m */; };
 		230382C81BE0748C008F4E42 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 230382B01BE0748C008F4E42 /* MJDictionaryCache.m */; };
@@ -86,6 +88,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2302E9131C57B5F900D49512 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		2302E9141C57B5F900D49512 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		230382A51BE073D4008F4E42 /* qunale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qunale.json; sourceTree = "<group>"; };
 		230382A81BE07444008F4E42 /* HotelDetailRoomStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelDetailRoomStatusModel.h; path = ../HotelDetailRoomStatusModel.h; sourceTree = "<group>"; };
 		230382A91BE07444008F4E42 /* HotelDetailRoomStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelDetailRoomStatusModel.m; path = ../HotelDetailRoomStatusModel.m; sourceTree = "<group>"; };
@@ -244,6 +248,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2302E9121C57B5E400D49512 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				2302E9131C57B5F900D49512 /* 1.png */,
+				2302E9141C57B5F900D49512 /* 2.png */,
+			);
+			path = ScreenShot;
+			sourceTree = "<group>";
+		};
 		230382AE1BE0748C008F4E42 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +463,7 @@
 		23A523191BDF537800B0AC98 /* CollectionControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2302E9121C57B5E400D49512 /* ScreenShot */,
 				230382D91BE09228008F4E42 /* model */,
 				235672ED1C044E7E00F178E4 /* View */,
 				235672EC1C044E7500F178E4 /* Controller */,
@@ -537,6 +551,7 @@
 			files = (
 				230382DD1BE09541008F4E42 /* hotelInfo.json in Resources */,
 				23A5232D1BDF537800B0AC98 /* LaunchScreen.storyboard in Resources */,
+				2302E9161C57B5F900D49512 /* 2.png in Resources */,
 				235673121C044EDD00F178E4 /* HotelCommentIInfosCell.xib in Resources */,
 				2356731E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib in Resources */,
 				23A5232A1BDF537800B0AC98 /* Assets.xcassets in Resources */,
@@ -544,6 +559,7 @@
 				23A523251BDF537800B0AC98 /* Main.storyboard in Resources */,
 				230382A61BE073D4008F4E42 /* qunale.json in Resources */,
 				235673281C04521400F178E4 /* PhotoLibraryController.xib in Resources */,
+				2302E9151C57B5F900D49512 /* 1.png in Resources */,
 				235673181C044EDD00F178E4 /* HotelInfoCommentCell.xib in Resources */,
 				23A5235A1BDF72FA00B0AC98 /* title.png in Resources */,
 				235673141C044EDD00F178E4 /* HotelDetailAutoLayoutCell.xib in Resources */,
