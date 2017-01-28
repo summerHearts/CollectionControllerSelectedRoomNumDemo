@@ -85,6 +85,7 @@
 		23A5232D1BDF537800B0AC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A5232B1BDF537800B0AC98 /* LaunchScreen.storyboard */; };
 		23A5235A1BDF72FA00B0AC98 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A523591BDF72FA00B0AC98 /* title.png */; };
 		23A523801BDF8BDE00B0AC98 /* HotelStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */; };
+		AE469CB91E3CD619004D84BD /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE469CB81E3CD619004D84BD /* 3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,6 +236,7 @@
 		23A523591BDF72FA00B0AC98 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		23A5237E1BDF8BDE00B0AC98 /* HotelStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelStarView.h; path = ../HotelStarView.h; sourceTree = "<group>"; };
 		23A5237F1BDF8BDE00B0AC98 /* HotelStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelStarView.m; path = ../HotelStarView.m; sourceTree = "<group>"; };
+		AE469CB81E3CD619004D84BD /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			children = (
 				2302E9131C57B5F900D49512 /* 1.png */,
 				2302E9141C57B5F900D49512 /* 2.png */,
+				AE469CB81E3CD619004D84BD /* 3.png */,
 			);
 			path = ScreenShot;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				230382DD1BE09541008F4E42 /* hotelInfo.json in Resources */,
 				23A5232D1BDF537800B0AC98 /* LaunchScreen.storyboard in Resources */,
 				2302E9161C57B5F900D49512 /* 2.png in Resources */,
+				AE469CB91E3CD619004D84BD /* 3.png in Resources */,
 				235673121C044EDD00F178E4 /* HotelCommentIInfosCell.xib in Resources */,
 				2356731E1C044EDD00F178E4 /* HotelRoomTypeFooterView.xib in Resources */,
 				23A5232A1BDF537800B0AC98 /* Assets.xcassets in Resources */,
